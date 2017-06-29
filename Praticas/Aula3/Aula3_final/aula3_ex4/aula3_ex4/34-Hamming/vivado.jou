@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 16 20:03:24 2017
+# Process ID: 3632
+# Current directory: C:/Users/fmcta/Desktop/34-Hamming
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8168 C:\Users\fmcta\Desktop\34-Hamming\34-Hamming.xpr
+# Log file: C:/Users/fmcta/Desktop/34-Hamming/vivado.log
+# Journal file: C:/Users/fmcta/Desktop/34-Hamming\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fmcta/Desktop/34-Hamming/34-Hamming.xpr

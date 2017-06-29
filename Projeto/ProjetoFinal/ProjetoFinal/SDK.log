@@ -1,0 +1,266 @@
+16:33:18 INFO  : Registering command handlers for SDK TCF services
+16:33:19 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+16:33:20 INFO  : XSCT server has started successfully.
+16:33:20 INFO  : Successfully done setting XSCT server connection channel  
+16:33:20 INFO  : Successfully done setting SDK workspace  
+16:33:20 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+16:33:21 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_0 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:33:21 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+16:35:01 INFO  : Registering command handlers for SDK TCF services
+16:35:02 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+16:35:03 INFO  : XSCT server has started successfully.
+16:35:03 INFO  : Successfully done setting XSCT server connection channel  
+16:35:03 INFO  : Successfully done setting SDK workspace  
+16:35:03 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+16:35:03 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_1 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:35:03 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+16:35:52 INFO  : Registering command handlers for SDK TCF services
+16:35:53 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+16:35:54 INFO  : XSCT server has started successfully.
+16:35:54 INFO  : Successfully done setting XSCT server connection channel  
+16:35:54 INFO  : Successfully done setting SDK workspace  
+16:35:54 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+16:35:54 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_2 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:35:54 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+16:37:56 INFO  : Registering command handlers for SDK TCF services
+16:37:56 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+16:37:57 INFO  : XSCT server has started successfully.
+16:37:58 INFO  : Successfully done setting XSCT server connection channel  
+16:37:58 INFO  : Successfully done setting SDK workspace  
+16:37:58 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+16:37:58 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_3 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:37:58 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+16:54:32 INFO  : Registering command handlers for SDK TCF services
+16:54:32 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+16:54:34 INFO  : XSCT server has started successfully.
+16:54:34 INFO  : Successfully done setting XSCT server connection channel  
+16:54:34 INFO  : Successfully done setting SDK workspace  
+16:54:34 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+16:54:35 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_4 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:54:35 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+17:43:20 INFO  : Registering command handlers for SDK TCF services
+17:43:20 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+17:50:22 INFO  : Registering command handlers for SDK TCF services
+17:50:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+17:50:24 INFO  : XSCT server has started successfully.
+17:50:25 INFO  : Successfully done setting XSCT server connection channel  
+17:50:25 INFO  : Successfully done setting SDK workspace  
+17:50:25 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+17:50:25 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_5 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:50:25 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+17:54:07 INFO  : Registering command handlers for SDK TCF services
+17:54:07 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+17:54:09 INFO  : XSCT server has started successfully.
+17:54:09 INFO  : Successfully done setting XSCT server connection channel  
+17:54:10 INFO  : Successfully done setting SDK workspace  
+17:54:10 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+17:54:12 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_6 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:54:12 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+17:57:34 INFO  : Registering command handlers for SDK TCF services
+17:57:34 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+17:57:35 INFO  : XSCT server has started successfully.
+17:57:36 INFO  : Successfully done setting XSCT server connection channel  
+17:57:36 INFO  : Successfully done setting SDK workspace  
+17:57:36 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+17:57:38 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_7 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:57:38 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+17:59:53 INFO  : Registering command handlers for SDK TCF services
+17:59:53 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+17:59:55 INFO  : XSCT server has started successfully.
+17:59:55 INFO  : Successfully done setting XSCT server connection channel  
+17:59:56 INFO  : Successfully done setting SDK workspace  
+17:59:56 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+17:59:58 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_8 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:59:58 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+18:01:44 INFO  : Registering command handlers for SDK TCF services
+18:01:44 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+18:01:45 INFO  : XSCT server has started successfully.
+18:01:46 INFO  : Successfully done setting XSCT server connection channel  
+18:01:46 INFO  : Successfully done setting SDK workspace  
+18:01:46 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+18:01:48 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_9 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:01:48 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+18:03:57 INFO  : Registering command handlers for SDK TCF services
+18:03:57 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+18:03:58 INFO  : XSCT server has started successfully.
+18:03:58 INFO  : Successfully done setting XSCT server connection channel  
+18:03:59 INFO  : Successfully done setting SDK workspace  
+18:03:59 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+18:04:01 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_10 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:04:01 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal
+17:17:28 INFO  : Registering command handlers for SDK TCF services
+17:17:31 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\temp_xsdb_launch_script.tcl
+17:17:54 INFO  : XSCT server has started successfully.
+17:17:54 INFO  : Successfully done setting XSCT server connection channel  
+17:18:07 INFO  : Successfully done setting SDK workspace  
+17:18:07 INFO  : Processing command line option -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal.
+17:18:07 ERROR : Error occurred while creating hardware platform ProjetoFinal_hw_platform_11 from sysdef
+java.io.FileNotFoundException: C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal (Acesso negado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:18:07 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal

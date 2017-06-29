@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 16 15:51:16 2017
+# Process ID: 12824
+# Current directory: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1844 D:\Users\jgnro\Desktop\UA\4A2S\4A2S\CR\Praticas\03\34-demo\34-demo.xpr
+# Log file: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/vivado.log
+# Journal file: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.xpr
+open_bd_design {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

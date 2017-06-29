@@ -1,0 +1,328 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 22:12:23 2017
+# Process ID: 9800
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7740 C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Praticas\Aula6\Ex3\Ex3.xpr
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/vivado.log
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MaxMinFSM [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/maxMinFSM -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/maxMinFSM/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/maxMinFSM c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/maxMinFSM/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd}
+disconnect_bd_net /MaxMinFSM_0_outp [get_bd_pins MaxMinFSM_0/outp]
+delete_bd_objs [get_bd_nets MaxMinFSM_0_outadd]
+delete_bd_objs [get_bd_nets btnC_1] [get_bd_nets blk_mem_gen_0_douta] [get_bd_cells MaxMinFSM_0]
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:MaxMinFSM:1.0 MaxMinFSM_0
+endgroup
+set_property location {4.5 346 -618} [get_bd_cells MaxMinFSM_0]
+connect_bd_net [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins MaxMinFSM_0/inadd]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins MaxMinFSM_0/inp]
+connect_bd_net [get_bd_ports clk] [get_bd_pins MaxMinFSM_0/clk]
+connect_bd_net [get_bd_ports led] [get_bd_pins MaxMinFSM_0/outadd]
+connect_bd_net [get_bd_pins MaxMinFSM_0/outp] [get_bd_pins xlslice_1/Din]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins MaxMinFSM_0/btnC]
+delete_bd_objs [get_bd_nets btnC_1] [get_bd_ports btnC]
+create_bd_port -dir I -type rst btnL
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports btnL]
+set_property location {-528 -522} [get_bd_ports btnL]
+connect_bd_net [get_bd_ports btnL] [get_bd_pins MaxMinFSM_0/btnL]
+create_bd_port -dir I -type rst btnC
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports btnC]
+set_property location {-512 -470} [get_bd_ports btnC]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins MaxMinFSM_0/btnC]
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.Register_PortA_Output_of_Memory_Primitives {false}] [get_bd_cells blk_mem_gen_0]
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_MaxMinFSM_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_MaxMinFSM_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+create_project Ex4 C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4 -part xc7a100tcsg324-1
+set_property target_language VHDL [current_project]
+import_files -fileset constrs_1 -force -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Nexys4_Master.xdc
+current_project Ex3
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd}
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_blk_mem_gen_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_clock_divider_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_ramControl_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_c_addsub_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_EightDisplayControl_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xlslice_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xlslice_1_0] }
+catch { config_ip_cache -export [get_ips -all design_1_c_counter_binary_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_MaxMinFSM_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_clock_divider_0_1_synth_1 design_1_c_addsub_0_0_synth_1 design_1_xlslice_0_0_synth_1 design_1_xlslice_1_0_synth_1 design_1_c_counter_binary_0_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/new
+current_project Ex4
+close [ open C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/new/AverageFSM.vhd w ]
+add_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/new/AverageFSM.vhd
+current_project Ex3
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd}
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project Ex4
+current_project Ex3
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Register_PortA_Output_of_Memory_Core {true} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_bd_cells blk_mem_gen_0]
+endgroup
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_blk_mem_gen_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_blk_mem_gen_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project Ex4
+current_project Ex3
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project Ex4
+current_project Ex3
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex3/Ex3.srcs/sources_1/bd/design_1/design_1.bd}
+current_project Ex4
+set_property  ip_repo_paths  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips [current_project]
+update_ip_catalog
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/averageFSM -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/averageFSM/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/averageFSM c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/averageFSM/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+create_bd_design "design_1"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider:1.0 clock_divider_0
+endgroup
+set_property location {0.5 -268 -322} [get_bd_cells clock_divider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0
+endgroup
+set_property location {2.5 -19 -459} [get_bd_cells c_counter_binary_0]
+set_property location {0.5 -447 -476} [get_bd_cells clock_divider_0]
+set_property location {1.5 -196 -460} [get_bd_cells c_counter_binary_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:EightDisplayControl:1.0 EightDisplayControl_0
+endgroup
+set_property location {3.5 88 -833} [get_bd_cells EightDisplayControl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+endgroup
+set_property location {4 56 -613} [get_bd_cells blk_mem_gen_0]
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {16} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/aula6_ex1.coe} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_0
+endgroup
+set_property location {2.5 -189 -670} [get_bd_cells c_addsub_0]
+startgroup
+set_property -dict [list CONFIG.B_Width.VALUE_SRC USER CONFIG.A_Width.VALUE_SRC USER CONFIG.B_Type.VALUE_SRC USER CONFIG.A_Type.VALUE_SRC USER] [get_bd_cells c_addsub_0]
+set_property -dict [list CONFIG.A_Type {Unsigned} CONFIG.B_Type {Unsigned} CONFIG.A_Width {8} CONFIG.B_Width {8} CONFIG.Out_Width {8} CONFIG.B_Constant {true} CONFIG.B_Value {00000001} CONFIG.CE {false} CONFIG.Out_Width {8} CONFIG.Latency {1}] [get_bd_cells c_addsub_0]
+endgroup
+set_property location {1 -329 -586} [get_bd_cells c_counter_binary_0]
+set_property location {0.5 -525 -628} [get_bd_cells clock_divider_0]
+set_property location {2 -329 -543} [get_bd_cells c_counter_binary_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_shift_ram:12.0 c_shift_ram_0
+endgroup
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ramControl:1.0 ramControl_0
+endgroup
+set_property location {2.5 -259 -816} [get_bd_cells ramControl_0]
+set_property location {0.5 -566 -651} [get_bd_cells clock_divider_0]
+set_property location {1.5 -365 -604} [get_bd_cells c_counter_binary_0]
+set_property location {4 60 -568} [get_bd_cells ramControl_0]
+set_property location {2.5 -87 -670} [get_bd_cells c_addsub_0]
+set_property location {4 49 -699} [get_bd_cells ramControl_0]
+set_property location {3 -49 -582} [get_bd_cells c_addsub_0]
+startgroup
+create_bd_port -dir I -type clk clk
+set_property CONFIG.FREQ_HZ 100000000 [get_bd_ports clk]
+endgroup
+set_property location {-690 -660} [get_bd_ports clk]
+create_bd_port -dir I -type rst btnC
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports btnC]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clock_divider_0/reset]
+set_property location {2 -463 -599} [get_bd_cells clock_divider_0]
+undo
+set_property location {1 -554 -623} [get_bd_cells clock_divider_0]
+set_property location {2 -340 -609} [get_bd_cells c_counter_binary_0]
+set_property location {2 -360 -540} [get_bd_cells c_counter_binary_0]
+set_property location {2.5 -197 -650} [get_bd_cells ramControl_0]
+set_property location {4 -51 -540} [get_bd_cells c_addsub_0]
+set_property location {2 -359 -528} [get_bd_cells c_counter_binary_0]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins c_counter_binary_0/CLK]
+connect_bd_net [get_bd_pins ramControl_0/clk_d] [get_bd_pins blk_mem_gen_0/clka]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins ramControl_0/clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+set_property location {0.5 -666 -739} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins ramControl_0/rst]
+startgroup
+set_property -dict [list CONFIG.Output_Width {4}] [get_bd_cells c_counter_binary_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.A_Width {4} CONFIG.B_Width {4} CONFIG.Out_Width {4} CONFIG.Latency {1} CONFIG.B_Value {0000}] [get_bd_cells c_addsub_0]
+endgroup
+connect_bd_net [get_bd_pins c_counter_binary_0/Q] [get_bd_pins c_addsub_0/A]
+startgroup
+set_property -dict [list CONFIG.Implementation {Fabric} CONFIG.Add_Mode {Subtract} CONFIG.Latency_Configuration {Manual} CONFIG.CE {false} CONFIG.A_Width {4} CONFIG.B_Width {4} CONFIG.Out_Width {4} CONFIG.Latency {1}] [get_bd_cells c_addsub_0]
+endgroup
+startgroup
+create_bd_port -dir I -type clk CLK_1
+connect_bd_net [get_bd_pins /c_addsub_0/CLK] [get_bd_ports CLK_1]
+endgroup
+undo
+connect_bd_net [get_bd_pins c_addsub_0/S] [get_bd_pins blk_mem_gen_0/addra]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:AverageFSM:1.0 AverageFSM_0
+endgroup
+set_property location {5 -48 -881} [get_bd_cells AverageFSM_0]
+set_property location {-762 -819} [get_bd_ports clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins AverageFSM_0/clk]
+set_property location {-768 -793} [get_bd_ports btnC]
+set_property location {-762 -909} [get_bd_ports clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins AverageFSM_0/btnC]
+set_property location {-761 -868} [get_bd_ports btnC]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins AverageFSM_0/inp]
+connect_bd_net [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins AverageFSM_0/inadd]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {8} CONFIG.DIN_FROM {3} CONFIG.DIN_TO {0} CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_0]
+endgroup
+set_property location {6 183 -882} [get_bd_cells xlslice_0]
+set_property location {6 526 -831} [get_bd_cells EightDisplayControl_0]
+set_property location {6 508 -830} [get_bd_cells EightDisplayControl_0]
+set_property location {5 235 -848} [get_bd_cells xlslice_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {8} CONFIG.DIN_TO {4} CONFIG.DIN_FROM {7} CONFIG.DIN_FROM {7} CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_1]
+endgroup
+set_property location {6 173 -935} [get_bd_cells xlslice_1]
+connect_bd_net [get_bd_pins AverageFSM_0/outp] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins AverageFSM_0/outp] [get_bd_pins xlslice_1/Din]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins EightDisplayControl_0/rightR]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins EightDisplayControl_0/near_rightR]
+save_bd_design
+create_bd_port -dir O -from 7 -to 0 an
+set_property location {629 -882} [get_bd_ports an]
+startgroup
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
+endgroup
+create_bd_port -dir O -from 6 -to 0 seg
+set_property location {636 -779} [get_bd_ports seg]
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins blk_mem_gen_0/wea]
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.B_Value {0001}] [get_bd_cells c_addsub_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Bypass {false} CONFIG.AINIT_Value {0}] [get_bd_cells c_addsub_0]
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+current_project Ex3
+current_project Ex4
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.Latency {0}] [get_bd_cells c_addsub_0]
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+connect_bd_net [get_bd_ports clk] [get_bd_pins EightDisplayControl_0/clk]
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_clock_divider_0_0_synth_1 design_1_c_counter_binary_0_0_synth_1 design_1_EightDisplayControl_0_0_synth_1 design_1_blk_mem_gen_0_0_synth_1 design_1_c_addsub_0_0_synth_1 design_1_ramControl_0_0_synth_1 design_1_xlconstant_0_0_synth_1 design_1_AverageFSM_0_0_synth_1 design_1_xlslice_0_0_synth_1 design_1_xlslice_1_0_synth_1 design_1_xlconstant_1_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+close_project

@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 15 19:09:20 2017
+# Process ID: 12844
+# Current directory: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1068 D:\Users\jgnro\Desktop\UA\4A2S\4A2S\CR\Praticas\03\34-Hamming\34-Hamming.xpr
+# Log file: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/vivado.log
+# Journal file: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/34-Hamming.xpr
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+ipx::package_project -root_dir d:/users/jgnro/desktop/ua/4a2s/4a2s/cr/praticas/03/34-hamming/34-hamming.srcs -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  d:/users/jgnro/desktop/ua/4a2s/4a2s/cr/praticas/03/34-hamming/34-hamming.srcs [current_project]
+update_ip_catalog
+close_project
+create_project 34-demo D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo -part xc7a100tcsg324-1
+set_property target_language VHDL [current_project]
+add_files -fileset constrs_1 -norecurse D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/N4/Nexys4_Master.xdc
+import_files -fileset constrs_1 D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/N4/Nexys4_Master.xdc
+set_property  ip_repo_paths  D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Repositório [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {d:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Repositório D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03} [current_project]
+update_ip_catalog
+create_bd_design "design_1"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dist_mem_gen:8.0 dist_mem_gen_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.depth {16} CONFIG.data_width {1024} CONFIG.memory_type {rom} CONFIG.coefficient_file {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-random generator/gen/word.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:hamming:1.0 hamming_0
+endgroup
+set_property location {2.5 540 -163} [get_bd_cells hamming_0]
+regenerate_bd_layout
+set_property -dict [list CONFIG.width {1024}] [get_bd_cells hamming_0]
+connect_bd_net [get_bd_pins dist_mem_gen_0/spo] [get_bd_pins hamming_0/word]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins dist_mem_gen_0/a]
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {4} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+startgroup
+create_bd_port -dir I -type clk clk
+set_property CONFIG.FREQ_HZ 100000000 [get_bd_ports clk]
+endgroup
+connect_bd_net [get_bd_ports clk] [get_bd_pins hamming_0/clk]
+create_bd_port -dir I btnC
+connect_bd_net [get_bd_ports btnC] [get_bd_pins hamming_0/reset]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_0
+endgroup
+set_property location {4.5 1039 56} [get_bd_cells BinToBCD16_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins BinToBCD16_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins BinToBCD16_0/reset]
+connect_bd_net [get_bd_pins BinToBCD16_0/binary] [get_bd_pins hamming_0/hamming]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_0/request]
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:EightDispControl:1.0 EightDispControl_0
+endgroup
+set_property location {5.5 1104 161} [get_bd_cells EightDispControl_0]
+set_property location {5 1089 127} [get_bd_cells EightDispControl_0]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDispControl_0/rightR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins EightDispControl_0/near_rightR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins EightDispControl_0/near_leftR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD3] [get_bd_pins EightDispControl_0/leftR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD4] [get_bd_pins EightDispControl_0/rightL]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {4} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_2]
+endgroup
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins EightDispControl_0/near_rightL]
+connect_bd_net [get_bd_pins EightDispControl_0/near_leftL] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins EightDispControl_0/leftL] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_ports clk] [get_bd_pins EightDispControl_0/clk]
+regenerate_bd_layout
+create_bd_port -dir O -from 7 -to 0 an
+startgroup
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
+endgroup
+create_bd_port -dir O -from 6 -to 0 seg
+startgroup
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
+endgroup
+regenerate_bd_layout
+make_wrapper -files [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+set_property synth_checkpoint_mode None [get_files  D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.ip_user_files/sim_scripts -ip_user_files_dir D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.ip_user_files -ipstatic_source_dir D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/modelsim} {questa=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/questa} {riviera=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/riviera} {activehdl=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+make_wrapper -files [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -top
+ipx::edit_ip_in_project -upgrade true -name hamming_v1_0_v1_0_project -directory D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.tmp/hamming_v1_0_v1_0_project d:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/34-Hamming.srcs/component.xml
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03
+open_bd_design {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets hamming_0_hamming] [get_bd_nets dist_mem_gen_0_spo] [get_bd_cells hamming_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:hamming:1.0 hamming_0
+endgroup
+set_property location {4 568 92} [get_bd_cells hamming_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins hamming_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins hamming_0/reset]
+connect_bd_net [get_bd_pins hamming_0/word] [get_bd_pins dist_mem_gen_0/spo]
+connect_bd_net [get_bd_pins hamming_0/dout] [get_bd_pins BinToBCD16_0/binary]
+regenerate_bd_layout
+make_wrapper -files [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -top
+open_bd_design {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.width {1024}] [get_bd_cells hamming_0]
+endgroup
+make_wrapper -files [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.ip_user_files/sim_scripts -ip_user_files_dir D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.ip_user_files -ipstatic_source_dir D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/modelsim} {questa=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/questa} {riviera=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/riviera} {activehdl=D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_bd_design {D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}

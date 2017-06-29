@@ -1,0 +1,619 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 28 18:19:22 2017
+# Process ID: 4916
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1
+# Command line: vivado.exe -log DebUART_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DebUART_wrapper.tcl
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/DebUART_wrapper.vds
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DebUART_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/AT9/REPOSITORY'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 265.059 ; gain = 55.227
+Command: synth_design -top DebUART_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18340 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 348.047 ; gain = 138.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DebUART_wrapper' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd:29]
+INFO: [Synth 8-3491] module 'DebUART' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1360' bound to instance 'DebUART_i' of component 'DebUART' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'DebUART' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1379]
+INFO: [Synth 8-3491] module 'DebUART_BinToBCD16_0_1' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_BinToBCD16_0_1_stub.vhdl:5' bound to instance 'BinToBCD16_0' of component 'DebUART_BinToBCD16_0_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1809]
+INFO: [Synth 8-638] synthesizing module 'DebUART_BinToBCD16_0_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_BinToBCD16_0_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'DebUART_EightDisplayControl_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_EightDisplayControl_0_0_stub.vhdl:5' bound to instance 'EightDisplayControl_0' of component 'DebUART_EightDisplayControl_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1822]
+INFO: [Synth 8-638] synthesizing module 'DebUART_EightDisplayControl_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_EightDisplayControl_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'DebUART_VGA_for_block_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_VGA_for_block_0_0_stub.vhdl:5' bound to instance 'VGA_for_block_0' of component 'DebUART_VGA_for_block_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1836]
+INFO: [Synth 8-638] synthesizing module 'DebUART_VGA_for_block_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_VGA_for_block_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'DebUART_axi_gpio_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'DebUART_axi_gpio_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1855]
+INFO: [Synth 8-638] synthesizing module 'DebUART_axi_gpio_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'DebUART_blk_mem_gen_0_1' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_blk_mem_gen_0_1_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'DebUART_blk_mem_gen_0_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1879]
+INFO: [Synth 8-638] synthesizing module 'DebUART_blk_mem_gen_0_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_blk_mem_gen_0_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DebUART_blk_mem_gen_1_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_blk_mem_gen_1_0_stub.vhdl:5' bound to instance 'blk_mem_gen_1' of component 'DebUART_blk_mem_gen_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1887]
+INFO: [Synth 8-638] synthesizing module 'DebUART_blk_mem_gen_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_blk_mem_gen_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DebUART_clk_wiz_1_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'DebUART_clk_wiz_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1895]
+INFO: [Synth 8-638] synthesizing module 'DebUART_clk_wiz_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'DebUART_clock_divider_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_clock_divider_0_0_stub.vhdl:5' bound to instance 'clock_divider_0' of component 'DebUART_clock_divider_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1902]
+INFO: [Synth 8-638] synthesizing module 'DebUART_clock_divider_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_clock_divider_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'DebUART_joinWords_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_joinWords_0_0_stub.vhdl:5' bound to instance 'joinWords_0' of component 'DebUART_joinWords_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1908]
+INFO: [Synth 8-638] synthesizing module 'DebUART_joinWords_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_joinWords_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'DebUART_mdm_1_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'DebUART_mdm_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1914]
+INFO: [Synth 8-638] synthesizing module 'DebUART_mdm_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'DebUART_microblaze_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'DebUART_microblaze_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1947]
+INFO: [Synth 8-638] synthesizing module 'DebUART_microblaze_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'DebUART_microblaze_0_axi_periph_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:945]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1FMNAS6' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1FMNAS6' (1#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_H4EMTX' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_H4EMTX' (2#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:158]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_GZ1BYI' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:815]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_GZ1BYI' (3#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:815]
+INFO: [Synth 8-3491] module 'DebUART_xbar_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'DebUART_xbar_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xbar_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'DebUART_microblaze_0_axi_periph_0' (4#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:945]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_6YEPYU' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:242]
+INFO: [Synth 8-3491] module 'DebUART_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'DebUART_dlmb_bram_if_cntlr_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'DebUART_dlmb_bram_if_cntlr_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'DebUART_dlmb_v10_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'DebUART_dlmb_v10_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:506]
+INFO: [Synth 8-638] synthesizing module 'DebUART_dlmb_v10_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'DebUART_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'DebUART_ilmb_bram_if_cntlr_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'DebUART_ilmb_bram_if_cntlr_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'DebUART_ilmb_v10_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'DebUART_ilmb_v10_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:588]
+INFO: [Synth 8-638] synthesizing module 'DebUART_ilmb_v10_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'DebUART_lmb_bram_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'DebUART_lmb_bram_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:616]
+INFO: [Synth 8-638] synthesizing module 'DebUART_lmb_bram_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_6YEPYU' (5#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:242]
+INFO: [Synth 8-3491] module 'DebUART_ordProject_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_ordProject_0_0_stub.vhdl:5' bound to instance 'ordProject_0' of component 'DebUART_ordProject_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2090]
+INFO: [Synth 8-638] synthesizing module 'DebUART_ordProject_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_ordProject_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'DebUART_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'DebUART_rst_clk_wiz_1_100M_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2097]
+INFO: [Synth 8-638] synthesizing module 'DebUART_rst_clk_wiz_1_100M_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'DebUART_splitWords_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_splitWords_0_0_stub.vhdl:5' bound to instance 'splitWords_0' of component 'DebUART_splitWords_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2110]
+INFO: [Synth 8-638] synthesizing module 'DebUART_splitWords_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_splitWords_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'DebUART_xlconcat_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconcat_0_0_stub.vhdl:5' bound to instance 'xlconcat_0' of component 'DebUART_xlconcat_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2117]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconcat_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconcat_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'DebUART_xlconstant_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'DebUART_xlconstant_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2123]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconstant_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_0_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'DebUART_xlconstant_1_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_1_0_stub.vhdl:5' bound to instance 'xlconstant_1' of component 'DebUART_xlconstant_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2127]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconstant_1_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_1_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'DebUART_xlconstant_2_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_2_0_stub.vhdl:5' bound to instance 'xlconstant_2' of component 'DebUART_xlconstant_2_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2131]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconstant_2_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_2_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'DebUART_xlconstant_3_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_3_0_stub.vhdl:5' bound to instance 'xlconstant_3' of component 'DebUART_xlconstant_3_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2135]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconstant_3_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_3_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'DebUART_xlconstant_4_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_4_0_stub.vhdl:5' bound to instance 'xlconstant_4' of component 'DebUART_xlconstant_4_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2139]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconstant_4_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_4_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'DebUART_xlconstant_5_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_5_0_stub.vhdl:5' bound to instance 'xlconstant_5' of component 'DebUART_xlconstant_5_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2143]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlconstant_5_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlconstant_5_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'DebUART_xlslice_0_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_0_0_stub.vhdl:5' bound to instance 'xlslice_0' of component 'DebUART_xlslice_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2147]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlslice_0_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'DebUART_xlslice_0_1' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_0_1_stub.vhdl:5' bound to instance 'xlslice_1' of component 'DebUART_xlslice_0_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2152]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlslice_0_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_0_1_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'DebUART_xlslice_2_0' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_2_0_stub.vhdl:5' bound to instance 'xlslice_2' of component 'DebUART_xlslice_2_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2157]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlslice_2_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_2_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'DebUART_xlslice_2_1' declared at 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_2_1_stub.vhdl:5' bound to instance 'xlslice_3' of component 'DebUART_xlslice_2_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2162]
+INFO: [Synth 8-638] synthesizing module 'DebUART_xlslice_2_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/realtime/DebUART_xlslice_2_1_stub.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'DebUART' (6#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1379]
+INFO: [Synth 8-256] done synthesizing module 'DebUART_wrapper' (7#1) [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd:29]
+WARNING: [Synth 8-3331] design s00_couplers_imp_GZ1BYI has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_GZ1BYI has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_GZ1BYI has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_GZ1BYI has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_H4EMTX has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_H4EMTX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_H4EMTX has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_H4EMTX has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1FMNAS6 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1FMNAS6 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1FMNAS6 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1FMNAS6 has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 387.313 ; gain = 177.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 387.313 ; gain = 177.480
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_BinToBCD16_0_1' instantiated as 'DebUART_i/BinToBCD16_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1809]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_EightDisplayControl_0_0' instantiated as 'DebUART_i/EightDisplayControl_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1822]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_VGA_for_block_0_0' instantiated as 'DebUART_i/VGA_for_block_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1836]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_axi_gpio_0_0' instantiated as 'DebUART_i/axi_gpio_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1855]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_blk_mem_gen_0_1' instantiated as 'DebUART_i/blk_mem_gen_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1879]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_blk_mem_gen_1_0' instantiated as 'DebUART_i/blk_mem_gen_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1887]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_clk_wiz_1_0' instantiated as 'DebUART_i/clk_wiz_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1895]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_clock_divider_0_0' instantiated as 'DebUART_i/clock_divider_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1902]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_dlmb_bram_if_cntlr_0' instantiated as 'DebUART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:452]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_dlmb_v10_0' instantiated as 'DebUART_i/microblaze_0_local_memory/dlmb_v10' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:506]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_ilmb_bram_if_cntlr_0' instantiated as 'DebUART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:534]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_ilmb_v10_0' instantiated as 'DebUART_i/microblaze_0_local_memory/ilmb_v10' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:588]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_joinWords_0_0' instantiated as 'DebUART_i/joinWords_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1908]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_lmb_bram_0' instantiated as 'DebUART_i/microblaze_0_local_memory/lmb_bram' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:616]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_mdm_1_0' instantiated as 'DebUART_i/mdm_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1914]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_microblaze_0_0' instantiated as 'DebUART_i/microblaze_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1947]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_ordProject_0_0' instantiated as 'DebUART_i/ordProject_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2090]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_rst_clk_wiz_1_100M_0' instantiated as 'DebUART_i/rst_clk_wiz_1_100M' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2097]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_splitWords_0_0' instantiated as 'DebUART_i/splitWords_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2110]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xbar_0' instantiated as 'DebUART_i/microblaze_0_axi_periph/xbar' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:1295]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconcat_0_0' instantiated as 'DebUART_i/xlconcat_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2117]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconstant_0_0' instantiated as 'DebUART_i/xlconstant_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2123]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconstant_1_0' instantiated as 'DebUART_i/xlconstant_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2127]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconstant_2_0' instantiated as 'DebUART_i/xlconstant_2' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2131]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconstant_3_0' instantiated as 'DebUART_i/xlconstant_3' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2135]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconstant_4_0' instantiated as 'DebUART_i/xlconstant_4' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2139]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlconstant_5_0' instantiated as 'DebUART_i/xlconstant_5' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2143]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlslice_0_0' instantiated as 'DebUART_i/xlslice_0' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2147]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlslice_0_1' instantiated as 'DebUART_i/xlslice_1' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2152]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlslice_2_0' instantiated as 'DebUART_i/xlslice_2' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2157]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'DebUART_xlslice_2_1' instantiated as 'DebUART_i/xlslice_3' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd:2162]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp/DebUART_microblaze_0_0_in_context.xdc] for cell 'DebUART_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp/DebUART_microblaze_0_0_in_context.xdc] for cell 'DebUART_i/microblaze_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_2/DebUART_dlmb_v10_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_2/DebUART_dlmb_v10_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_3/DebUART_ilmb_v10_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_3/DebUART_ilmb_v10_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_4/DebUART_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_4/DebUART_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_5/DebUART_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_5/DebUART_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_6/DebUART_lmb_bram_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_6/DebUART_lmb_bram_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_7/DebUART_mdm_1_0_in_context.xdc] for cell 'DebUART_i/mdm_1'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_7/DebUART_mdm_1_0_in_context.xdc] for cell 'DebUART_i/mdm_1'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_8/DebUART_clk_wiz_1_0_in_context.xdc] for cell 'DebUART_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_8/DebUART_clk_wiz_1_0_in_context.xdc] for cell 'DebUART_i/clk_wiz_1'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_9/DebUART_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'DebUART_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_9/DebUART_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'DebUART_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_10/DebUART_axi_gpio_0_0_in_context.xdc] for cell 'DebUART_i/axi_gpio_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_10/DebUART_axi_gpio_0_0_in_context.xdc] for cell 'DebUART_i/axi_gpio_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_11/DebUART_xbar_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_11/DebUART_xbar_0_in_context.xdc] for cell 'DebUART_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_12/DebUART_xlconstant_0_0_in_context.xdc] for cell 'DebUART_i/xlconstant_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_12/DebUART_xlconstant_0_0_in_context.xdc] for cell 'DebUART_i/xlconstant_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_13/DebUART_xlconstant_1_0_in_context.xdc] for cell 'DebUART_i/xlconstant_1'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_13/DebUART_xlconstant_1_0_in_context.xdc] for cell 'DebUART_i/xlconstant_1'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_14/DebUART_xlconstant_2_0_in_context.xdc] for cell 'DebUART_i/xlconstant_2'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_14/DebUART_xlconstant_2_0_in_context.xdc] for cell 'DebUART_i/xlconstant_2'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_15/DebUART_xlconstant_0_0_in_context.xdc] for cell 'DebUART_i/xlconstant_3'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_15/DebUART_xlconstant_0_0_in_context.xdc] for cell 'DebUART_i/xlconstant_3'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_16/DebUART_clock_divider_0_0_in_context.xdc] for cell 'DebUART_i/clock_divider_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_16/DebUART_clock_divider_0_0_in_context.xdc] for cell 'DebUART_i/clock_divider_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_17/DebUART_xlconstant_5_0_in_context.xdc] for cell 'DebUART_i/xlconstant_5'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_17/DebUART_xlconstant_5_0_in_context.xdc] for cell 'DebUART_i/xlconstant_5'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_18/DebUART_xlconcat_0_0_in_context.xdc] for cell 'DebUART_i/xlconcat_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_18/DebUART_xlconcat_0_0_in_context.xdc] for cell 'DebUART_i/xlconcat_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_19/DebUART_BinToBCD16_0_1_in_context.xdc] for cell 'DebUART_i/BinToBCD16_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_19/DebUART_BinToBCD16_0_1_in_context.xdc] for cell 'DebUART_i/BinToBCD16_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_20/DebUART_EightDisplayControl_0_0_in_context.xdc] for cell 'DebUART_i/EightDisplayControl_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_20/DebUART_EightDisplayControl_0_0_in_context.xdc] for cell 'DebUART_i/EightDisplayControl_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_21/DebUART_ordProject_0_0_in_context.xdc] for cell 'DebUART_i/ordProject_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_21/DebUART_ordProject_0_0_in_context.xdc] for cell 'DebUART_i/ordProject_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_22/DebUART_xlslice_0_0_in_context.xdc] for cell 'DebUART_i/xlslice_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_22/DebUART_xlslice_0_0_in_context.xdc] for cell 'DebUART_i/xlslice_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_23/DebUART_xlslice_0_1_in_context.xdc] for cell 'DebUART_i/xlslice_1'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_23/DebUART_xlslice_0_1_in_context.xdc] for cell 'DebUART_i/xlslice_1'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_24/DebUART_VGA_for_block_0_0_in_context.xdc] for cell 'DebUART_i/VGA_for_block_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_24/DebUART_VGA_for_block_0_0_in_context.xdc] for cell 'DebUART_i/VGA_for_block_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_25/DebUART_xlslice_2_0_in_context.xdc] for cell 'DebUART_i/xlslice_2'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_25/DebUART_xlslice_2_0_in_context.xdc] for cell 'DebUART_i/xlslice_2'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_26/DebUART_xlslice_2_1_in_context.xdc] for cell 'DebUART_i/xlslice_3'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_26/DebUART_xlslice_2_1_in_context.xdc] for cell 'DebUART_i/xlslice_3'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_27/DebUART_blk_mem_gen_0_1_in_context.xdc] for cell 'DebUART_i/blk_mem_gen_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_27/DebUART_blk_mem_gen_0_1_in_context.xdc] for cell 'DebUART_i/blk_mem_gen_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_28/DebUART_joinWords_0_0_in_context.xdc] for cell 'DebUART_i/joinWords_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_28/DebUART_joinWords_0_0_in_context.xdc] for cell 'DebUART_i/joinWords_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_29/DebUART_blk_mem_gen_1_0_in_context.xdc] for cell 'DebUART_i/blk_mem_gen_1'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_29/DebUART_blk_mem_gen_1_0_in_context.xdc] for cell 'DebUART_i/blk_mem_gen_1'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_30/DebUART_xlconstant_1_0_in_context.xdc] for cell 'DebUART_i/xlconstant_4'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_30/DebUART_xlconstant_1_0_in_context.xdc] for cell 'DebUART_i/xlconstant_4'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_31/DebUART_splitWords_0_0_in_context.xdc] for cell 'DebUART_i/splitWords_0'
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_31/DebUART_splitWords_0_0_in_context.xdc] for cell 'DebUART_i/splitWords_0'
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc:112]
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/DebUART_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/constrs_1/imports/constrs_1/imports/AulasTeoricas/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DebUART_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DebUART_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 676.484 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DebUART_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DebUART_i/blk_mem_gen_1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DebUART_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_8/DebUART_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/.Xil/Vivado-4916-TiagoHenriques/dcp_8/DebUART_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for DebUART_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/BinToBCD16_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/EightDisplayControl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/VGA_for_block_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/blk_mem_gen_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/clock_divider_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/joinWords_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/ordProject_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/splitWords_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconstant_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconstant_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconstant_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlconstant_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DebUART_i/xlslice_3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design DebUART_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design DebUART_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design DebUART_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design DebUART_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design DebUART_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design DebUART_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'DebUART_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'DebUART_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/mdm_1/Dbg_Clk_0' to pin 'DebUART_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/mdm_1/Dbg_Update_0' to pin 'DebUART_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/clk_wiz_1/clk_out1' to pin 'DebUART_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/clock_divider_0/clk' to pin 'DebUART_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/BinToBCD16_0/clk' to pin 'DebUART_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/EightDisplayControl_0/clk' to pin 'DebUART_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DebUART_i/splitWords_0/clk' to pin 'DebUART_i/clock_divider_0/bbstub_divided_clk/O'
+INFO: [Synth 8-5819] Moved 9 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |DebUART_BinToBCD16_0_1          |         1|
+|2     |DebUART_EightDisplayControl_0_0 |         1|
+|3     |DebUART_VGA_for_block_0_0       |         1|
+|4     |DebUART_axi_gpio_0_0            |         1|
+|5     |DebUART_blk_mem_gen_0_1         |         1|
+|6     |DebUART_blk_mem_gen_1_0         |         1|
+|7     |DebUART_clk_wiz_1_0             |         1|
+|8     |DebUART_clock_divider_0_0       |         1|
+|9     |DebUART_joinWords_0_0           |         1|
+|10    |DebUART_mdm_1_0                 |         1|
+|11    |DebUART_microblaze_0_0          |         1|
+|12    |DebUART_xbar_0                  |         1|
+|13    |DebUART_ordProject_0_0          |         1|
+|14    |DebUART_rst_clk_wiz_1_100M_0    |         1|
+|15    |DebUART_splitWords_0_0          |         1|
+|16    |DebUART_xlconcat_0_0            |         1|
+|17    |DebUART_xlconstant_0_0          |         1|
+|18    |DebUART_xlconstant_1_0          |         1|
+|19    |DebUART_xlconstant_2_0          |         1|
+|20    |DebUART_xlconstant_3_0          |         1|
+|21    |DebUART_xlconstant_4_0          |         1|
+|22    |DebUART_xlconstant_5_0          |         1|
+|23    |DebUART_xlslice_0_0             |         1|
+|24    |DebUART_xlslice_0_1             |         1|
+|25    |DebUART_xlslice_2_0             |         1|
+|26    |DebUART_xlslice_2_1             |         1|
+|27    |DebUART_dlmb_bram_if_cntlr_0    |         1|
+|28    |DebUART_dlmb_v10_0              |         1|
+|29    |DebUART_ilmb_bram_if_cntlr_0    |         1|
+|30    |DebUART_ilmb_v10_0              |         1|
+|31    |DebUART_lmb_bram_0              |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |DebUART_BinToBCD16_0_1_bbox          |     1|
+|2     |DebUART_EightDisplayControl_0_0_bbox |     1|
+|3     |DebUART_VGA_for_block_0_0_bbox       |     1|
+|4     |DebUART_axi_gpio_0_0_bbox            |     1|
+|5     |DebUART_blk_mem_gen_0_1_bbox         |     1|
+|6     |DebUART_blk_mem_gen_1_0_bbox         |     1|
+|7     |DebUART_clk_wiz_1_0_bbox             |     1|
+|8     |DebUART_clock_divider_0_0_bbox       |     1|
+|9     |DebUART_dlmb_bram_if_cntlr_0_bbox    |     1|
+|10    |DebUART_dlmb_v10_0_bbox              |     1|
+|11    |DebUART_ilmb_bram_if_cntlr_0_bbox    |     1|
+|12    |DebUART_ilmb_v10_0_bbox              |     1|
+|13    |DebUART_joinWords_0_0_bbox           |     1|
+|14    |DebUART_lmb_bram_0_bbox              |     1|
+|15    |DebUART_mdm_1_0_bbox                 |     1|
+|16    |DebUART_microblaze_0_0_bbox          |     1|
+|17    |DebUART_ordProject_0_0_bbox          |     1|
+|18    |DebUART_rst_clk_wiz_1_100M_0_bbox    |     1|
+|19    |DebUART_splitWords_0_0_bbox          |     1|
+|20    |DebUART_xbar_0_bbox                  |     1|
+|21    |DebUART_xlconcat_0_0_bbox            |     1|
+|22    |DebUART_xlconstant_0_0_bbox          |     1|
+|23    |DebUART_xlconstant_1_0_bbox          |     1|
+|24    |DebUART_xlconstant_2_0_bbox          |     1|
+|25    |DebUART_xlconstant_3_0_bbox          |     1|
+|26    |DebUART_xlconstant_4_0_bbox          |     1|
+|27    |DebUART_xlconstant_5_0_bbox          |     1|
+|28    |DebUART_xlslice_0_0_bbox             |     1|
+|29    |DebUART_xlslice_0_1_bbox             |     1|
+|30    |DebUART_xlslice_2_0_bbox             |     1|
+|31    |DebUART_xlslice_2_1_bbox             |     1|
+|32    |IBUF                                 |     2|
+|33    |OBUF                                 |    29|
++------+-------------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+-------------------------------------+------+
+|      |Instance                      |Module                               |Cells |
++------+------------------------------+-------------------------------------+------+
+|1     |top                           |                                     |  2819|
+|2     |  DebUART_i                   |DebUART                              |  2788|
+|3     |    microblaze_0_axi_periph   |DebUART_microblaze_0_axi_periph_0    |   263|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_6YEPYU |   494|
++------+------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 676.484 ; gain = 466.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 676.484 ; gain = 114.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 676.484 ; gain = 466.652
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 676.484 ; gain = 411.426
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/DebUART_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 676.484 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 28 18:20:01 2017...

@@ -1,0 +1,1270 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Apr 02 15:24:57 2017
+# Process ID: 12940
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9424 C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Praticas\Aula3\Aula3_final\project_ex3\project_1.xpr
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/vivado.log
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3'
+INFO: [Project 1-313] Project file moved from 'C:/Users/fmcta/Desktop/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/users/fmcta', nor could it be found using path 'C:/users/fmcta'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/users/fmcta/contador_1000bits', nor could it be found using path 'C:/users/fmcta/contador_1000bits'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/users/fmcta/RanGen', nor could it be found using path 'C:/users/fmcta/RanGen'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/users/fmcta'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/users/fmcta/contador_1000bits'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/users/fmcta/RanGen'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'ex3.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+ex3_contador1000Bits_0_1
+ex3_Decimal_to_Displays_4_0_0
+ex3_BinToBCD16_0_0
+ex3_RanGen_0_0
+ex3_clock_divider_0_0
+
+open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:21 . Memory (MB): peak = 791.590 ; gain = 117.375
+create_project Aula3_estudo_ex3 C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3 -part xc7a100tcsg324-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 833.605 ; gain = 0.000
+set_property target_language VHDL [current_project]
+add_files -fileset constrs_1 -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Nexys4_Master.xdc
+add_files -norecurse {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/Decimal_to_Displays_4.vhd C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/generator.vhd C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/imports/new/common.vhd C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/contador1000Bits.vhd}
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/generator.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/contador1000Bits.vhd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4 c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/dectodisp4'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 854.781 ; gain = 0.000
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 854.781 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4'.
+set_property top RanGen [current_fileset]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/imports/new/common.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/Decimal_to_Displays_4.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/contador1000Bits.vhd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 885.207 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 885.207 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4'.
+set_property top contador1000Bits [current_fileset]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/generator.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/imports/new/common.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/new/Decimal_to_Displays_4.vhd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000 c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/cont1000'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 885.207 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 885.207 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000 c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4'.
+current_project project_1
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/bd/ex3/ex3.bd}
+Adding cell -- xilinx.com:user:BinToBCD16:1.0 - BinToBCD16_0
+Adding cell -- xilinx.com:user:RanGen:1.0 - RanGen_0
+Adding cell -- xilinx.com:user:clock_divider:1.0 - clock_divider_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:user:Decimal_to_Displays_4:1.0 - Decimal_to_Displays_4_0
+Adding cell -- xilinx.com:user:contador1000Bits:1.0 - contador1000Bits_0
+Successfully read diagram <ex3> from BD file <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/project_1.srcs/sources_1/bd/ex3/ex3.bd>
+open_bd_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 922.496 ; gain = 32.047
+current_project Aula3_estudo_ex3
+create_bd_design "design_1"
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 967.809 ; gain = 42.629
+set_property  ip_repo_paths  {c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000 c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4 C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/cont1000'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/ranGen'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/decToDisp4'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider:1.0 clock_divider_0
+endgroup
+set_property location {0.5 -197 -159} [get_bd_cells clock_divider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:RanGen:1.0 RanGen_0
+endgroup
+set_property location {1 -176 -285} [get_bd_cells RanGen_0]
+set_property location {0.5 -408 -216} [get_bd_cells clock_divider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:contador1000Bits:1.0 contador1000Bits_0
+endgroup
+set_property location {2.5 -130 -441} [get_bd_cells contador1000Bits_0]
+set_property location {0.5 -443 -307} [get_bd_cells clock_divider_0]
+set_property location {2 -118 -245} [get_bd_cells RanGen_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BinToBCD16:1.0 BinToBCD16_0
+endgroup
+set_property location {3.5 205 -442} [get_bd_cells BinToBCD16_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:Decimal_to_Displays_4:1.0 Decimal_to_Displays_4_0
+endgroup
+set_property location {4.5 334 -276} [get_bd_cells Decimal_to_Displays_4_0]
+set_property location {0.5 -442 -422} [get_bd_cells clock_divider_0]
+set_property location {1.5 -214 -585} [get_bd_cells contador1000Bits_0]
+set_property location {2 -178 -316} [get_bd_cells RanGen_0]
+set_property location {2.5 134 -561} [get_bd_cells BinToBCD16_0]
+set_property location {3.5 318 -346} [get_bd_cells Decimal_to_Displays_4_0]
+set_property location {3 79 -581} [get_bd_cells BinToBCD16_0]
+set_property location {3 62 -581} [get_bd_cells BinToBCD16_0]
+set_property location {2.5 40 -576} [get_bd_cells BinToBCD16_0]
+set_property location {2 -268 -580} [get_bd_cells contador1000Bits_0]
+set_property location {1 -475 -453} [get_bd_cells clock_divider_0]
+set_property location {0.5 -495 -456} [get_bd_cells clock_divider_0]
+set_property location {1.5 -319 -341} [get_bd_cells RanGen_0]
+set_property location {2.5 -182 -528} [get_bd_cells contador1000Bits_0]
+set_property location {1.5 -529 -490} [get_bd_cells clock_divider_0]
+startgroup
+create_bd_port -dir I -type clk clk
+set_property CONFIG.FREQ_HZ 1000000 [get_bd_ports clk]
+endgroup
+set_property location {-698 -515} [get_bd_ports clk]
+create_bd_port -dir I btnL
+set_property location {-698 -473} [get_bd_ports btnL]
+create_bd_port -dir I btnC
+connect_bd_net [get_bd_ports btnC] [get_bd_pins contador1000Bits_0/btnC]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_0/clk]
+connect_bd_net [get_bd_ports btnL] [get_bd_pins clock_divider_0/reset]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins contador1000Bits_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins RanGen_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins BinToBCD16_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins Decimal_to_Displays_4_0/clk]
+connect_bd_net [get_bd_ports btnL] [get_bd_pins BinToBCD16_0/reset]
+connect_bd_net [get_bd_pins RanGen_0/random_num] [get_bd_pins contador1000Bits_0/entrada]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins BinToBCD16_0/request]
+connect_bd_net [get_bd_pins contador1000Bits_0/count1s] [get_bd_pins BinToBCD16_0/binary]
+set_property location {5 224 -594} [get_bd_cells BinToBCD16_0]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins Decimal_to_Displays_4_0/sw0]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins Decimal_to_Displays_4_0/sw1]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins Decimal_to_Displays_4_0/sw2]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD3] [get_bd_pins Decimal_to_Displays_4_0/sw3]
+create_bd_port -dir O -from 7 -to 0 an
+create_bd_port -dir O -from 6 -to 0 seg
+set_property location {617 -335} [get_bd_ports seg]
+connect_bd_net [get_bd_ports an] [get_bd_pins Decimal_to_Displays_4_0/an]
+connect_bd_net [get_bd_ports seg] [get_bd_pins Decimal_to_Displays_4_0/seg]
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+WARNING: [BD 41-927] Following properties on pin /clock_divider_0/divided_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clock_divider_0_0_divided_clk 
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd> 
+add_files -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RanGen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block contador1000Bits_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Decimal_to_Displays_4_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_clock_divider_0_0_synth_1 design_1_RanGen_0_0_synth_1 design_1_contador1000Bits_0_0_synth_1 design_1_BinToBCD16_0_0_synth_1 design_1_Decimal_to_Displays_4_0_0_synth_1 design_1_xlconstant_0_0_synth_1}
+[Sun Apr 02 15:47:29 2017] Launched design_1_clock_divider_0_0_synth_1, design_1_RanGen_0_0_synth_1, design_1_contador1000Bits_0_0_synth_1, design_1_BinToBCD16_0_0_synth_1, design_1_Decimal_to_Displays_4_0_0_synth_1, design_1_xlconstant_0_0_synth_1...
+Run output will be captured here:
+design_1_clock_divider_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_clock_divider_0_0_synth_1/runme.log
+design_1_RanGen_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_RanGen_0_0_synth_1/runme.log
+design_1_contador1000Bits_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_contador1000Bits_0_0_synth_1/runme.log
+design_1_BinToBCD16_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_BinToBCD16_0_0_synth_1/runme.log
+design_1_Decimal_to_Displays_4_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_Decimal_to_Displays_4_0_0_synth_1/runme.log
+design_1_xlconstant_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_xlconstant_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property top design_1_wrapper [current_fileset]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 02 15:50:09 2017] Launched design_1_Decimal_to_Displays_4_0_0_synth_1, design_1_xlconstant_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_Decimal_to_Displays_4_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_Decimal_to_Displays_4_0_0_synth_1/runme.log
+design_1_xlconstant_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/design_1_xlconstant_0_0_synth_1/runme.log
+synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/synth_1/runme.log
+[Sun Apr 02 15:50:10 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1214.762 ; gain = 0.000
+current_project project_1
+close_project
+open_project C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-demo/34-demo.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-demo'
+INFO: [Project 1-313] Project file moved from 'C:/Users/fmcta/Desktop/aula3_ex4/34-demo' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/users/fmcta/component.xml', nor could it be found using path 'C:/users/fmcta/component.xml'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/users/fmcta', nor could it be found using path 'C:/users/fmcta'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/Repositório', nor could it be found using path 'C:/Users/fmcta/Repositório'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/03', nor could it be found using path 'C:/Users/fmcta/Desktop/03'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/users/fmcta'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/Repositório'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/03'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_hamming_0_1
+design_1_EightDispControl_0_1
+design_1_BinToBCD16_0_1
+
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1214.762 ; gain = 0.000
+current_project Aula3_estudo_ex3
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1347.434 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274505419A
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+current_project 34-demo
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:dist_mem_gen:8.0 - dist_mem_gen_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:user:hamming:1.0 - hamming_0
+Adding cell -- ua.pt:user:EightDispControl:1.0 - EightDispControl_0
+Adding cell -- xilinx.com:user:BinToBCD16:1.0 - BinToBCD16_0
+Successfully read diagram <design_1> from BD file <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1485.406 ; gain = 0.156
+current_project Aula3_estudo_ex3
+close_project
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex3/Aula3_estudo_ex3.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Apr 02 16:12:35 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 02 16:12:35 2017...
+close_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1485.406 ; gain = 0.000
+create_project Aula3_estudo_ex4 C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4 -part xc7a100tcsg324-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1485.406 ; gain = 0.000
+set_property target_language VHDL [current_project]
+add_files -fileset constrs_1 -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Nexys4_Master.xdc
+import_files -norecurse {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-Hamming/34-Hamming.srcs/sources_1/new/hamming.vhd {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/EightDisplayControl.vhd} {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/segment_decoder.vhd}}
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-Hamming/34-Hamming.srcs/sources_1/new/hamming.vhd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/eightdispcont'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1512.836 ; gain = 0.000
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1512.836 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'.
+set_property top hamming [current_fileset]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/segment_decoder.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/EightDisplayControl.vhd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/hamming'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1512.836 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1512.836 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'.
+current_project 34-demo
+current_project Aula3_estudo_ex4
+create_bd_design "design_1"
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1525.441 ; gain = 12.605
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+create_bd_cell: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1678.355 ; gain = 149.199
+endgroup
+set_property location {0.5 -56 -186} [get_bd_cells blk_mem_gen_0]
+current_project 34-demo
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/aula3_ex4/aula3_ex4/34-demo/34-demo.srcs/sources_1/bd/design_1/design_1.bd}
+current_project Aula3_estudo_ex4
+delete_bd_objs [get_bd_cells blk_mem_gen_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dist_mem_gen:8.0 dist_mem_gen_0
+endgroup
+current_project 34-demo
+startgroup
+current_project Aula3_estudo_ex4
+set_property -dict [list CONFIG.depth {16} CONFIG.data_width {1024}] [get_bd_cells dist_mem_gen_0]
+endgroup
+current_project 34-demo
+startgroup
+current_project Aula3_estudo_ex4
+set_property -dict [list CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/coe_from_java1.coe}] [get_bd_cells dist_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/coe_from_java1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../coe/coe_from_java1.coe'
+endgroup
+set_property location {0.5 -114 -154} [get_bd_cells dist_mem_gen_0]
+set_property  ip_repo_paths  {c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BinToBCD16:1.0 BinToBCD16_0
+endgroup
+set_property location {2.5 352 -127} [get_bd_cells BinToBCD16_0]
+set_property location {0.5 -236 -215} [get_bd_cells dist_mem_gen_0]
+set_property location {1.5 71 -134} [get_bd_cells BinToBCD16_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:EightDisplayControl:1.0 EightDisplayControl_0
+endgroup
+set_property location {3.5 393 -315} [get_bd_cells EightDisplayControl_0]
+set_property location {0.5 -198 -244} [get_bd_cells dist_mem_gen_0]
+set_property location {1.5 66 -157} [get_bd_cells BinToBCD16_0]
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider:1.0 clock_divider_0
+endgroup
+set_property location {2 -148 -379} [get_bd_cells clock_divider_0]
+set_property location {0.5 -285 -199} [get_bd_cells dist_mem_gen_0]
+set_property location {0.5 -349 -369} [get_bd_cells clock_divider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:hamming:1.0 hamming_0
+endgroup
+set_property location {3 74 -359} [get_bd_cells hamming_0]
+set_property location {1.5 -55 -161} [get_bd_cells dist_mem_gen_0]
+set_property location {1.5 -169 -365} [get_bd_cells clock_divider_0]
+current_project 34-demo
+current_project Aula3_estudo_ex4
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_cells hamming_0]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/segment_decoder.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/EightDisplayControl.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/hamming'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1686.227 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1686.227 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. ''c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming' is not valid: Path is contained within another repository.'
+0
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:hamming:1.0 hamming_0
+endgroup
+set_property location {3.5 146 -414} [get_bd_cells hamming_0]
+delete_bd_objs [get_bd_cells hamming_0]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+report_ip_status -name ip_status
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/hamming -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/segment_decoder.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/imports/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/EightDisplayControl.vhd'.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/hamming/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/hamming c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/hamming/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/hamming'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1728.875 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1728.875 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. ''c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming' is not valid: Can't find the specified path.'
+0
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/Hamming'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/EightDispCont'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:hamming:1.0 hamming_0
+endgroup
+set_property location {3 162 -356} [get_bd_cells hamming_0]
+set_property location {2 -49 -207} [get_bd_cells dist_mem_gen_0]
+startgroup
+create_bd_port -dir I -type clk clk
+set_property CONFIG.FREQ_HZ 1000000 [get_bd_ports clk]
+endgroup
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_0/clk]
+create_bd_port -dir I -type rst btnC
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports btnC]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clock_divider_0/reset]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins hamming_0/reset]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins hamming_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins BinToBCD16_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins EightDisplayControl_0/clk]
+set_property location {3.5 247 -361} [get_bd_cells hamming_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {1}] [get_bd_cells xlconstant_0]
+set_property -dict [list CONFIG.CONST_WIDTH {4}] [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins dist_mem_gen_0/a]
+connect_bd_net [get_bd_pins dist_mem_gen_0/spo] [get_bd_pins hamming_0/word]
+connect_bd_net [get_bd_pins hamming_0/dout] [get_bd_pins BinToBCD16_0/binary]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_0/reset]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_0/reset]'
+set_property location {3 187 -126} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_0/request]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins BinToBCD16_0/reset]
+set_property location {5 771 -307} [get_bd_cells EightDisplayControl_0]
+set_property location {5 765 -315} [get_bd_cells EightDisplayControl_0]
+set_property location {5.5 796 -305} [get_bd_cells EightDisplayControl_0]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDisplayControl_0/rightR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins EightDisplayControl_0/near_rightR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins EightDisplayControl_0/near_leftR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD3] [get_bd_pins EightDisplayControl_0/leftR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD4] [get_bd_pins EightDisplayControl_0/rightL]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {4}] [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins EightDisplayControl_0/near_rightL]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins EightDisplayControl_0/near_leftL]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins EightDisplayControl_0/leftL]
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_2]
+endgroup
+current_project 34-demo
+current_project Aula3_estudo_ex4
+create_bd_port -dir O -from 7 -to 0 select_displays
+set_property location {966 -314} [get_bd_ports select_displays]
+connect_bd_net [get_bd_ports select_displays] [get_bd_pins EightDisplayControl_0/select_display]
+create_bd_port -dir O -from 6 -to 0 segments
+startgroup
+connect_bd_net [get_bd_ports segments] [get_bd_pins EightDisplayControl_0/segments]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+current_project 34-demo
+current_project Aula3_estudo_ex4
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+endgroup
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1343] Reset pin /BinToBCD16_0/reset (associated clock /BinToBCD16_0/clk) is connected to reset source /btnC (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clock_divider_0/divided_clk.
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+CRITICAL WARNING: [BD 41-1343] Reset pin /hamming_0/reset (associated clock /hamming_0/clk) is connected to reset source /btnC (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clock_divider_0/divided_clk.
+WARNING: [BD 41-927] Following properties on pin /clock_divider_0/divided_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clock_divider_0_0_divided_clk 
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+add_files -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dist_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hamming_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1780.066 ; gain = 21.742
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1780.738 ; gain = 0.672
+launch_runs -jobs 4 {design_1_dist_mem_gen_0_0_synth_1 design_1_BinToBCD16_0_0_synth_1 design_1_EightDisplayControl_0_0_synth_1 design_1_clock_divider_0_0_synth_1 design_1_hamming_0_2_synth_1 design_1_xlconstant_0_0_synth_1 design_1_xlconstant_1_0_synth_1 design_1_xlconstant_2_0_synth_1}
+[Sun Apr 02 16:48:08 2017] Launched design_1_dist_mem_gen_0_0_synth_1, design_1_BinToBCD16_0_0_synth_1, design_1_EightDisplayControl_0_0_synth_1, design_1_clock_divider_0_0_synth_1, design_1_hamming_0_2_synth_1, design_1_xlconstant_0_0_synth_1, design_1_xlconstant_1_0_synth_1, design_1_xlconstant_2_0_synth_1...
+Run output will be captured here:
+design_1_dist_mem_gen_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_dist_mem_gen_0_0_synth_1/runme.log
+design_1_BinToBCD16_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_BinToBCD16_0_0_synth_1/runme.log
+design_1_EightDisplayControl_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_EightDisplayControl_0_0_synth_1/runme.log
+design_1_clock_divider_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_clock_divider_0_0_synth_1/runme.log
+design_1_hamming_0_2_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_hamming_0_2_synth_1/runme.log
+design_1_xlconstant_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_xlconstant_0_0_synth_1/runme.log
+design_1_xlconstant_1_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_xlconstant_1_0_synth_1/runme.log
+design_1_xlconstant_2_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_xlconstant_2_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1787.809 ; gain = 7.070
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property top design_1_wrapper [current_fileset]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_BinToBCD16_0_0, cache-ID = 50d002893c46217b; cache size = 0.464 MB.
+[Sun Apr 02 16:49:35 2017] Launched design_1_dist_mem_gen_0_0_synth_1, design_1_hamming_0_2_synth_1, design_1_xlconstant_0_0_synth_1, design_1_xlconstant_1_0_synth_1, design_1_xlconstant_2_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_dist_mem_gen_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_dist_mem_gen_0_0_synth_1/runme.log
+design_1_hamming_0_2_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_hamming_0_2_synth_1/runme.log
+design_1_xlconstant_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_xlconstant_0_0_synth_1/runme.log
+design_1_xlconstant_1_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_xlconstant_1_0_synth_1/runme.log
+design_1_xlconstant_2_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/design_1_xlconstant_2_0_synth_1/runme.log
+synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/synth_1/runme.log
+[Sun Apr 02 16:49:35 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1790.559 ; gain = 1.148
+current_project 34-demo
+close_project
+open_project {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano'
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/UA/42 Ano' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/4º Ano/2ºSemestre/CR/coe_cr/coe_from_java1.coe', nor could it be found using path 'C:/Users/ASUS/Desktop/UA/4º Ano/2ºSemestre/CR/coe_cr/coe_from_java1.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/4º Ano/2ºSemestre/CR/gen/gen/word2.coe', nor could it be found using path 'C:/Users/ASUS/Desktop/UA/4º Ano/2ºSemestre/CR/gen/gen/word2.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1966.453 ; gain = 0.000
+current_project Aula3_estudo_ex4
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets EightDisplayControl_0_select_display] [get_bd_ports select_displays]
+create_bd_port -dir O -from 7 -to 0 an
+startgroup
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
+endgroup
+delete_bd_objs [get_bd_nets EightDisplayControl_0_segments] [get_bd_ports segments]
+create_bd_port -dir I -from 6 -to 0 seg
+delete_bd_objs [get_bd_ports seg]
+create_bd_port -dir O -from 6 -to 0 seg
+startgroup
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1343] Reset pin /BinToBCD16_0/reset (associated clock /BinToBCD16_0/clk) is connected to reset source /btnC (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clock_divider_0/divided_clk.
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+CRITICAL WARNING: [BD 41-1343] Reset pin /hamming_0/reset (associated clock /hamming_0/clk) is connected to reset source /btnC (synchronous to clock source /clk).
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /clock_divider_0/divided_clk.
+WARNING: [BD 41-927] Following properties on pin /clock_divider_0/divided_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clock_divider_0_0_divided_clk 
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dist_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hamming_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 02 17:08:01 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/synth_1/runme.log
+[Sun Apr 02 17:08:01 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2012.934 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274505419A
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets clk_1] [get_bd_cells clock_divider_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins hamming_0/clk]
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dist_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hamming_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_BinToBCD16_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_BinToBCD16_0_0, cache-ID = 50d002893c46217b; cache size = 1.384 MB.
+catch { config_ip_cache -export [get_ips -all design_1_EightDisplayControl_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_EightDisplayControl_0_0, cache-ID = 0637a9c30e205462; cache size = 1.384 MB.
+catch { [ delete_ip_run [get_ips -all design_1_EightDisplayControl_0_0] ] }
+catch { config_ip_cache -export [get_ips -all design_1_hamming_0_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_hamming_0_2, cache-ID = a25d0c5be8e3c141; cache size = 1.384 MB.
+catch { [ delete_ip_run [get_ips -all design_1_hamming_0_2] ] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 02 17:38:06 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/synth_1/runme.log
+[Sun Apr 02 17:38:06 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/runme.log
+current_project Aual5
+current_project Aula3_estudo_ex4
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 02 17:43:06 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/BinToBCD16_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/.Xil/Vivado-12544-TiagoHenriques/dcp_3/design_1_BinToBCD16_0_0.edf:1808]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/EightDisplayControl_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/.Xil/Vivado-12544-TiagoHenriques/dcp_4/design_1_EightDisplayControl_0_0.edf:1290]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/hamming_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/.Xil/Vivado-12544-TiagoHenriques/dcp_5/design_1_hamming_0_2.edf:12112]
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/.Xil/Vivado-12940-TiagoHenriques/dcp/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/.Xil/Vivado-12940-TiagoHenriques/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/.Xil/Vivado-12940-TiagoHenriques/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_final/project_ex3/.Xil/Vivado-12940-TiagoHenriques/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2140.945 ; gain = 0.047
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 2140.945 ; gain = 0.047
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 2271.813 ; gain = 199.055
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_project
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/Aula3_estudo_ex4/Aula3_estudo_ex4.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Apr 02 17:45:45 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 02 17:45:45 2017...
+close_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2626.703 ; gain = 0.676
+create_project Aula4_ex1 C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1 -part xc7a100tcsg324-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2626.703 ; gain = 0.000
+set_property target_language VHDL [current_project]
+import_files -fileset constrs_1 -force -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Nexys4_Master.xdc
+current_project Aual5
+current_project Aula4_ex1
+create_bd_design "design_1"
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 2626.703 ; gain = 0.000
+set_property  ip_repo_paths  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+create_bd_cell: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2626.703 ; gain = 0.000
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Depth_A {512} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/aula4_ex1.coe} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/aula4_ex1.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../Aula3/Aula3_estudo_ex4/coe/aula4_ex1.coe'
+endgroup
+set_property location {0.5 -86 -155} [get_bd_cells blk_mem_gen_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+current_project Aual5
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+current_project Aula4_ex1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+current_project Aual5
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+current_project Aula4_ex1
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider:1.0 clock_divider_0
+endgroup
+set_property location {0.5 -232 -170} [get_bd_cells clock_divider_0]
+set_property location {1 -266 -172} [get_bd_cells clock_divider_0]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_0/clka]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_0/clka]'
+file mkdir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/new
+close [ open C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/new/ex1.vhd w ]
+add_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/new/ex1.vhd
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'divided_clk' as interface 'divided_clk'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1 c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/aula4_ex1'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2652.871 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Xilinx/Vivado/2016.4/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2652.871 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {0.5 -489 -212} [get_bd_cells clock_divider_0]
+set_property location {1.5 -101 -205} [get_bd_cells blk_mem_gen_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ex1:1.0 ex1_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:EightDisplayControl:1.0 EightDisplayControl_0
+endgroup
+set_property location {4.5 261 -336} [get_bd_cells EightDisplayControl_0]
+startgroup
+create_bd_port -dir I -type clk clk
+set_property CONFIG.FREQ_HZ 1 [get_bd_ports clk]
+endgroup
+create_bd_port -dir I -type rst reset
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports reset]
+connect_bd_net [get_bd_ports reset] [get_bd_pins clock_divider_0/reset]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins ex1_0/divided_clk]
+connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/clka]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ex1_0/address(undef) and /blk_mem_gen_0/clka(clk)
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/clka]'
+connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_0/clka]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/rightR]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/douta is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/rightR]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_0/clka]'
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/rightR]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/douta is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/near_rightR]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/near_leftR]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/leftR]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/rightL]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/near_rightL]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/near_leftL]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/leftL]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_0/douta(undef) and /EightDisplayControl_0/clk(clk)
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EightDisplayControl_0/clk]'
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins EightDisplayControl_0/clk]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_0/clka]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_port -dir O -from 7 -to 0 an
+create_bd_port -dir O -from 6 -to 0 seg
+startgroup
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/select_display]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/select_display]'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]'
+INFO: [Common 17-17] undo 'startgroup'
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+delete_bd_objs [get_bd_nets ex1_0_address] [get_bd_cells ex1_0]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_nets reset_1] [get_bd_ports reset]
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'divided_clk' as interface 'divided_clk'.
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1 c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/aula4_ex1/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/utilizador/desktop/universidade/4_ano/2_semestre/cr/praticas/ips/aula4_ex1'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2652.871 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Xilinx/Vivado/2016.4/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2652.871 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:ex1:1.0 ex1_0
+endgroup
+set_property location {2.5 -157 -260} [get_bd_cells ex1_0]
+set_property location {0.5 -395 -214} [get_bd_cells clock_divider_0]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins ex1_0/divided_clk]
+create_bd_port -dir I -type rst btnU
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports btnU]
+connect_bd_net [get_bd_ports btnU] [get_bd_pins clock_divider_0/reset]
+connect_bd_net [get_bd_ports btnU] [get_bd_pins ex1_0/btnU]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /btnU(rst) and /ex1_0/btnU(undef)
+connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/addra]'
+connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/addra]'
+connect_bd_net [get_bd_pins ex1_0/address] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+WARNING: [BD 41-927] Following properties on pin /clock_divider_0/divided_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clock_divider_0_0_divided_clk 
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/rightR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_rightR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_leftR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/leftR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/rightL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_rightL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_leftL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/leftL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd> 
+add_files -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/rightR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_rightR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_leftR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/leftR'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/rightL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_rightL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/near_leftL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/EightDisplayControl_0/leftL'(4) to net 'blk_mem_gen_0_douta'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ex1_0 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2760.617 ; gain = 49.250
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_blk_mem_gen_0_0_synth_1 design_1_clock_divider_0_0_synth_1 design_1_EightDisplayControl_0_0_synth_1 design_1_ex1_0_1_synth_1}
+[Sun Apr 02 18:50:03 2017] Launched design_1_blk_mem_gen_0_0_synth_1, design_1_clock_divider_0_0_synth_1, design_1_EightDisplayControl_0_0_synth_1, design_1_ex1_0_1_synth_1...
+Run output will be captured here:
+design_1_blk_mem_gen_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+design_1_clock_divider_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.runs/design_1_clock_divider_0_0_synth_1/runme.log
+design_1_EightDisplayControl_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.runs/design_1_EightDisplayControl_0_0_synth_1/runme.log
+design_1_ex1_0_1_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.runs/design_1_ex1_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 02 18:52:24 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.runs/synth_1/runme.log
+[Sun Apr 02 18:52:24 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.runs/impl_1/runme.log
+current_project Aual5
+open_hw
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2760.617 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274505419A
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.runs/impl_1/ex3.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+current_project Aula4_ex1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.runs/impl_1/ex3.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+current_project Aual5
+current_project Aula4_ex1
+import_files -norecurse {{C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/Max.vhd} {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.srcs/sources_1/new/Min.vhd}}
+current_project Aual5
+current_project Aula4_ex1
+close [ open C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/new/ex2.vhd w ]
+add_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/Aula4_estudo/Aula4_ex1/Aula4_ex1.srcs/sources_1/new/ex2.vhd
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210274505419A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+close_project

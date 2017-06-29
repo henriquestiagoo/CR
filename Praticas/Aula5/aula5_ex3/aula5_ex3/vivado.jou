@@ -1,0 +1,357 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 04 14:39:31 2017
+# Process ID: 11584
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/aula5_ex3/aula5_ex3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11696 C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Praticas\Aula5\aula5_ex3\aula5_ex3\aula5_ex3.xpr
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/aula5_ex3/aula5_ex3/vivado.log
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/aula5_ex3/aula5_ex3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/aula5_ex3/aula5_ex3/aula5_ex3.xpr
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/aula5_ex3/aula5_ex3/aula5_ex3.srcs/sources_1/bd/ex3/ex3.bd}
+close_project
+create_project Aula5_estudo_ex1 C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1 -part xc7a100tcsg324-1
+set_property target_language VHDL [current_project]
+import_files -fileset constrs_1 -force -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Nexys4_Master.xdc
+create_bd_design "design_1"
+set_property  ip_repo_paths  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips [current_project]
+update_ip_catalog
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {128} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/aula5_estudo_ex1.coe} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider:1.0 clock_divider_0
+endgroup
+set_property location {0.5 -149 -98} [get_bd_cells clock_divider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1
+endgroup
+set_property location {2 12 -496} [get_bd_cells blk_mem_gen_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_2
+endgroup
+set_property location {2 17 -363} [get_bd_cells blk_mem_gen_1]
+set_property location {2 -38 -500} [get_bd_cells blk_mem_gen_2]
+startgroup
+set_property -dict [list CONFIG.Use_Byte_Write_Enable {false} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {128} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {128} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1]
+endgroup
+set_property location {1 40 -338} [get_bd_cells blk_mem_gen_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0
+endgroup
+set_property location {1 -160 -245} [get_bd_cells c_counter_binary_0]
+set_property location {0.5 -415 -169} [get_bd_cells clock_divider_0]
+set_property location {2 -115 -168} [get_bd_cells c_counter_binary_0]
+create_bd_port -dir I -type clk clk
+set_property -dict [list CONFIG.Output_Width {7}] [get_bd_cells c_counter_binary_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_0/clk]
+create_bd_port -dir I -type rst btnC
+set_property CONFIG.POLARITY ACTIVE_HIGH [get_bd_ports btnC]
+set_property location {-528 -147} [get_bd_ports btnC]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clock_divider_0/reset]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins c_counter_binary_0/CLK]
+connect_bd_net [get_bd_pins c_counter_binary_0/Q] [get_bd_pins blk_mem_gen_0/addra]
+set_property location {2 -166 -99} [get_bd_cells c_counter_binary_0]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_0/clka]
+file mkdir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/new
+close [ open C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/new/EvenOrPar.vhd w ]
+add_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/new/EvenOrPar.vhd
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/parOrEven -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/parOrEven/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/parOrEven c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/parOrEven/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {2.5 -47 -416} [get_bd_cells blk_mem_gen_1]
+set_property location {3 9 -531} [get_bd_cells blk_mem_gen_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:EvenOrPar:1.0 EvenOrPar_0
+endgroup
+set_property location {4.5 217 -286} [get_bd_cells EvenOrPar_0]
+set_property location {4 257 -331} [get_bd_cells EvenOrPar_0]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins EvenOrPar_0/clk]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins EvenOrPar_0/dataIn]
+set_property location {5 352 -460} [get_bd_cells blk_mem_gen_1]
+set_property location {5 441 -558} [get_bd_cells blk_mem_gen_2]
+set_property location {4 475 -413} [get_bd_cells blk_mem_gen_1]
+connect_bd_net [get_bd_pins EvenOrPar_0/par] [get_bd_pins blk_mem_gen_1/dina]
+connect_bd_net [get_bd_pins EvenOrPar_0/even] [get_bd_pins blk_mem_gen_2/dina]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_1/clka]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins blk_mem_gen_2/clka]
+connect_bd_net [get_bd_pins EvenOrPar_0/parAdd] [get_bd_pins blk_mem_gen_1/addra]
+set_property location {4 338 -517} [get_bd_cells EvenOrPar_0]
+undo
+set_property location {3 189 -199} [get_bd_cells EvenOrPar_0]
+set_property location {3 191 -277} [get_bd_cells EvenOrPar_0]
+connect_bd_net [get_bd_pins EvenOrPar_0/evenAdd] [get_bd_pins blk_mem_gen_2/addra]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins blk_mem_gen_2/wea]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins blk_mem_gen_1/wea]
+close [ open C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/new/mux_btnC.vhd w ]
+add_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/new/mux_btnC.vhd
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mux_btnC [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:mux_btnC:1.0 mux_btnC_0
+endgroup
+set_property location {6.5 813 -327} [get_bd_cells mux_btnC_0]
+set_property location {6 845 -279} [get_bd_cells mux_btnC_0]
+connect_bd_net [get_bd_pins blk_mem_gen_1/douta] [get_bd_pins mux_btnC_0/parIn]
+connect_bd_net [get_bd_pins blk_mem_gen_2/douta] [get_bd_pins mux_btnC_0/EvenIn]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins mux_btnC_0/btnC]
+save_bd_design
+set_property location {6.5 921 -290} [get_bd_cells mux_btnC_0]
+connect_bd_net [get_bd_pins EvenOrPar_0/parAdd] [get_bd_pins mux_btnC_0/parAddIn]
+connect_bd_net [get_bd_pins EvenOrPar_0/evenAdd] [get_bd_pins mux_btnC_0/evenAddIn]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BinToBCD16:1.0 BinToBCD16_0
+endgroup
+set_property location {6.5 1128 -294} [get_bd_cells BinToBCD16_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:EightDisplayControl:1.0 EightDisplayControl_0
+endgroup
+set_property location {7.5 1226 -100} [get_bd_cells EightDisplayControl_0]
+set_property location {7 959 -393} [get_bd_cells BinToBCD16_0]
+set_property location {8 1156 -112} [get_bd_cells EightDisplayControl_0]
+set_property location {7 982 -208} [get_bd_cells BinToBCD16_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:BinToBCD16:1.0 BinToBCD16_1
+endgroup
+set_property location {7 1008 -402} [get_bd_cells BinToBCD16_1]
+connect_bd_net [get_bd_pins mux_btnC_0/outAdd] [get_bd_pins BinToBCD16_0/binary]
+connect_bd_net [get_bd_pins mux_btnC_0/outWord] [get_bd_pins BinToBCD16_1/binary]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property location {6 853 -107} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_0/request]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_1/request]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider:1.0 clock_divider_1
+endgroup
+set_property location {3 0 -430} [get_bd_cells clock_divider_1]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clock_divider_1/reset]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_1/clk]
+startgroup
+set_property -dict [list CONFIG.how_fast {26}] [get_bd_cells clock_divider_1]
+endgroup
+connect_bd_net [get_bd_pins clock_divider_1/divided_clk] [get_bd_pins BinToBCD16_1/clk]
+connect_bd_net [get_bd_pins clock_divider_1/divided_clk] [get_bd_pins BinToBCD16_0/clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_2]
+set_property location {6 853 -546} [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins BinToBCD16_1/reset]
+connect_bd_net [get_bd_pins xlconstant_2/dout] [get_bd_pins BinToBCD16_0/reset]
+save_bd_design
+set_property location {8 1467 -316} [get_bd_cells EightDisplayControl_0]
+set_property location {8.5 1520 -326} [get_bd_cells EightDisplayControl_0]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDisplayControl_0/rightR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins EightDisplayControl_0/near_rightR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins EightDisplayControl_0/near_leftR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD3] [get_bd_pins EightDisplayControl_0/leftR]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD4] [get_bd_pins EightDisplayControl_0/rightL]
+undo
+undo
+undo
+undo
+undo
+connect_bd_net [get_bd_pins BinToBCD16_1/BCD0] [get_bd_pins EightDisplayControl_0/rightR]
+connect_bd_net [get_bd_pins BinToBCD16_1/BCD1] [get_bd_pins EightDisplayControl_0/near_rightR]
+connect_bd_net [get_bd_pins BinToBCD16_1/BCD2] [get_bd_pins EightDisplayControl_0/near_leftR]
+connect_bd_net [get_bd_pins BinToBCD16_1/BCD3] [get_bd_pins EightDisplayControl_0/leftR]
+connect_bd_net [get_bd_pins BinToBCD16_1/BCD4] [get_bd_pins EightDisplayControl_0/rightL]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDisplayControl_0/near_rightL]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD1] [get_bd_pins EightDisplayControl_0/near_leftL]
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD2] [get_bd_pins EightDisplayControl_0/leftL]
+connect_bd_net [get_bd_pins clock_divider_1/divided_clk] [get_bd_pins EightDisplayControl_0/clk]
+create_bd_port -dir O -from 7 -to 0 an
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDisplayControl_0/select_display]
+set_property location {1689 -382} [get_bd_ports an]
+create_bd_port -dir O -from 6 -to 0 seg
+set_property location {1681 -300} [get_bd_ports seg]
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDisplayControl_0/segments]
+save_bd_design
+disconnect_bd_net /btnC_1 [get_bd_pins clock_divider_0/reset]
+disconnect_bd_net /btnC_1 [get_bd_pins clock_divider_1/reset]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_3]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins clock_divider_1/reset]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins clock_divider_0/reset]
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_blk_mem_gen_0_0_synth_1 design_1_clock_divider_0_0_synth_1 design_1_blk_mem_gen_1_0_synth_1 design_1_blk_mem_gen_2_0_synth_1 design_1_c_counter_binary_0_0_synth_1 design_1_EvenOrPar_0_0_synth_1 design_1_xlconstant_0_0_synth_1 design_1_mux_btnC_0_0_synth_1 design_1_BinToBCD16_0_0_synth_1 design_1_EightDisplayControl_0_0_synth_1 design_1_BinToBCD16_1_0_synth_1 design_1_xlconstant_1_0_synth_1 design_1_clock_divider_1_0_synth_1 design_1_xlconstant_2_0_synth_1 design_1_xlconstant_3_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -top
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_mux_btnC_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_mux_btnC_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run design_1_mux_btnC_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_mux_btnC_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+report_ip_status -name ip_status 
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top mux_btnC [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+close_project
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+upgrade_ip -vlnv xilinx.com:user:mux_btnC:1.0 [get_ips  design_1_mux_btnC_0_0] -log ip_upgrade.log
+delete_bd_objs [get_bd_nets mux_btnC_0_outWord] [get_bd_nets mux_btnC_0_outAdd] [get_bd_nets blk_mem_gen_1_douta] [get_bd_nets blk_mem_gen_2_douta] [get_bd_nets btnC_1] [get_bd_cells mux_btnC_0]
+save_bd_design
+ipx::package_project -root_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips/mux_btnC/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:mux_btnC:1.0 mux_btnC_0
+endgroup
+set_property location {6.5 865 -317} [get_bd_cells mux_btnC_0]
+set_property location {7 891 -310} [get_bd_cells mux_btnC_0]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins mux_btnC_0/btnC]
+connect_bd_net [get_bd_pins EvenOrPar_0/parAdd] [get_bd_pins mux_btnC_0/parAddIn]
+connect_bd_net [get_bd_pins EvenOrPar_0/evenAdd] [get_bd_pins mux_btnC_0/evenAddIn]
+connect_bd_net [get_bd_pins mux_btnC_0/outAdd] [get_bd_pins BinToBCD16_0/binary]
+connect_bd_net [get_bd_pins mux_btnC_0/outWord] [get_bd_pins BinToBCD16_1/binary]
+connect_bd_net [get_bd_pins blk_mem_gen_1/douta] [get_bd_pins mux_btnC_0/parIn]
+connect_bd_net [get_bd_pins blk_mem_gen_2/douta] [get_bd_pins mux_btnC_0/EvenIn]
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -top
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_mux_btnC_0_1] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_mux_btnC_0_1_synth_1
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.how_fast {1}] [get_bd_cells clock_divider_0]
+endgroup
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_clock_divider_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_clock_divider_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_cells clock_divider_1]
+startgroup
+set_property -dict [list CONFIG.how_fast {26}] [get_bd_cells clock_divider_0]
+endgroup
+connect_bd_net [get_bd_ports clk] [get_bd_pins BinToBCD16_1/clk]
+save_bd_design
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_clock_divider_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_BinToBCD16_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_EightDisplayControl_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_BinToBCD16_1_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_clock_divider_0_0_synth_1 design_1_BinToBCD16_0_0_synth_1 design_1_EightDisplayControl_0_0_synth_1 design_1_BinToBCD16_1_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula5/Aula5_estudo_ex1/Aula5_estudo_ex1.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

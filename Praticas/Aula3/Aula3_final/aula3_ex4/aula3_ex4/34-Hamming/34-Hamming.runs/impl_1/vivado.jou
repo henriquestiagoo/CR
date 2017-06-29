@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 15 19:41:33 2017
+# Process ID: 7316
+# Current directory: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/34-Hamming.runs/impl_1
+# Command line: vivado.exe -log hamming.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hamming.tcl -notrace
+# Log file: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/34-Hamming.runs/impl_1/hamming.vdi
+# Journal file: D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/34-Hamming.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source hamming.tcl -notrace

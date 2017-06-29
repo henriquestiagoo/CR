@@ -1,0 +1,357 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 28 17:28:42 2017
+# Process ID: 8792
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6120 C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\MP_ToDisplays\MP_ToDisplays.xpr
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/vivado.log
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/AT9/REPOSITORY'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/AT9/REPOSITORY'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 874.520 ; gain = 190.652
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd}
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding cell -- xilinx.com:user:clock_divider:1.0 - clock_divider_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:user:BinToBCD16:1.0 - BinToBCD16_0
+Adding cell -- xilinx.com:user:EightDisplayControl:1.0 - EightDisplayControl_0
+Adding cell -- xilinx.com:user:ordProject:1.0 - ordProject_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:user:VGA_for_block:1.0 - VGA_for_block_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+Adding cell -- xilinx.com:user:joinWords:1.0 - joinWords_0
+Adding cell -- xilinx.com:user:separateWord:1.0 - separateWord_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Successfully read diagram <DebUART> from BD file <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 950.289 ; gain = 70.414
+delete_bd_objs [get_bd_nets clock_divider_0_divided_clk] [get_bd_nets ordProject_0_dataOut] [get_bd_cells separateWord_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:splitWords:1.0 splitWords_0
+endgroup
+set_property location {8 2662 874} [get_bd_cells splitWords_0]
+set_property -dict [list CONFIG.n_words {64}] [get_bd_cells splitWords_0]
+connect_bd_net [get_bd_pins ordProject_0/dataOut] [get_bd_pins splitWords_0/dataIn]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins splitWords_0/clk]
+set_property location {10.5 3300 852} [get_bd_cells xlconstant_5]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1122.938 ; gain = 122.984
+endgroup
+set_property location {9.5 3012 838} [get_bd_cells blk_mem_gen_1]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Use_RSTA_Pin {false}] [get_bd_cells blk_mem_gen_1]
+endgroup
+set_property location {9 3053 911} [get_bd_cells blk_mem_gen_1]
+connect_bd_net [get_bd_pins splitWords_0/addOut] [get_bd_pins blk_mem_gen_1/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins clk_wiz_1/clk_out1]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+WARNING: [BD 41-597] NET <valuesSorted_0_dataOut> has no source
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ui/bd_11bc4e6f.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_4
+endgroup
+connect_bd_net [get_bd_pins xlconstant_4/dout] [get_bd_pins blk_mem_gen_1/wea]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/wea is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins splitWords_0/dataOut] [get_bd_pins blk_mem_gen_1/dina]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/dina is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins blk_mem_gen_1/douta] [get_bd_pins xlconcat_0/In0]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/douta is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ui/bd_11bc4e6f.ui> 
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd]
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ordProject_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_for_block_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block joinWords_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block splitWords_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_4 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hw_handoff/DebUART.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hw_handoff/DebUART_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1266.359 ; gain = 88.238
+catch { config_ip_cache -export [get_ips -all DebUART_splitWords_0_0] }
+catch { config_ip_cache -export [get_ips -all DebUART_blk_mem_gen_1_0] }
+catch { config_ip_cache -export [get_ips -all DebUART_xlconstant_4_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DebUART_xlconstant_4_0, cache-ID = 3873e2ca10201817; cache size = 31.542 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd]
+launch_runs -jobs 4 {DebUART_splitWords_0_0_synth_1 DebUART_blk_mem_gen_1_0_synth_1}
+[Sun May 28 17:33:51 2017] Launched DebUART_splitWords_0_0_synth_1, DebUART_blk_mem_gen_1_0_synth_1...
+Run output will be captured here:
+DebUART_splitWords_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/DebUART_splitWords_0_0_synth_1/runme.log
+DebUART_blk_mem_gen_1_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/DebUART_blk_mem_gen_1_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun May 28 17:35:48 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/runme.log
+[Sun May 28 17:35:48 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/runme.log
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd}
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd}
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DebUART_i/BinToBCD16_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/.Xil/Vivado-18160-TiagoHenriques/dcp_20/DebUART_BinToBCD16_0_1.edf:1809]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DebUART_i/EightDisplayControl_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/.Xil/Vivado-18160-TiagoHenriques/dcp_21/DebUART_EightDisplayControl_0_0.edf:1291]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DebUART_i/clock_divider_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/.Xil/Vivado-18160-TiagoHenriques/dcp_17/DebUART_clock_divider_0_0.edf:1007]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DebUART_i/splitWords_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/.Xil/Vivado-18160-TiagoHenriques/dcp_30/DebUART_splitWords_0_0.edf:5455]
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/.Xil/Vivado-8792-TiagoHenriques/dcp/DebUART_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ip/DebUART_mdm_1_0/DebUART_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1996.539 ; gain = 503.574
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ip/DebUART_clk_wiz_1_0/DebUART_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/.Xil/Vivado-8792-TiagoHenriques/dcp/DebUART_wrapper_early.xdc]
+Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/.Xil/Vivado-8792-TiagoHenriques/dcp/DebUART_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/.Xil/Vivado-8792-TiagoHenriques/dcp/DebUART_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.848 . Memory (MB): peak = 2006.469 ; gain = 9.727
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.878 . Memory (MB): peak = 2006.469 ; gain = 9.727
+Generating merged BMM file for the design top 'DebUART_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ip/DebUART_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 95 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 79 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 16 instances
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 2116.789 ; gain = 715.105
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd}
+file copy -force C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/DebUART_wrapper.sysdef C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+delete_bd_objs [get_bd_nets splitWords_0_addOut]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {2}] [get_bd_cells blk_mem_gen_1]
+endgroup
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins blk_mem_gen_1/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ui/bd_11bc4e6f.ui> 
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd]
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ordProject_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_for_block_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block joinWords_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block splitWords_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_4 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hw_handoff/DebUART.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hw_handoff/DebUART_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.hwdef
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2188.402 ; gain = 43.109
+catch { config_ip_cache -export [get_ips -all DebUART_blk_mem_gen_1_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd]
+launch_runs -jobs 4 DebUART_blk_mem_gen_1_0_synth_1
+[Sun May 28 17:49:25 2017] Launched DebUART_blk_mem_gen_1_0_synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/DebUART_blk_mem_gen_1_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun May 28 17:51:01 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/runme.log
+[Sun May 28 17:51:01 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/runme.log
+file copy -force C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/DebUART_wrapper.sysdef C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd}
+delete_bd_objs [get_bd_nets splitWords_0_dataOut]
+delete_bd_objs [get_bd_nets ordProject_0_dataOut]
+delete_bd_objs [get_bd_nets clock_divider_0_divided_clk]
+delete_bd_objs [get_bd_cells splitWords_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:separateWord:1.0 separateWord_0
+endgroup
+set_property location {8 2685 931} [get_bd_cells separateWord_0]
+connect_bd_net [get_bd_pins clock_divider_0/divided_clk] [get_bd_pins separateWord_0/clk]
+startgroup
+set_property -dict [list CONFIG.n_words {64}] [get_bd_cells separateWord_0]
+endgroup
+connect_bd_net [get_bd_pins ordProject_0/dataOut] [get_bd_pins separateWord_0/dataIn]
+set_property location {9 3048 930} [get_bd_cells blk_mem_gen_1]
+connect_bd_net [get_bd_pins separateWord_0/dataOut] [get_bd_pins blk_mem_gen_1/dina]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/dina is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ui/bd_11bc4e6f.ui> 
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd]
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ordProject_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_for_block_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block joinWords_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block separateWord_0 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hw_handoff/DebUART.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hw_handoff/DebUART_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/hdl/DebUART.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2225.363 ; gain = 18.613
+catch { config_ip_cache -export [get_ips -all DebUART_separateWord_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DebUART_separateWord_0_0, cache-ID = 31867c53e7579e0d; cache size = 32.071 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun May 28 18:01:27 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/synth_1/runme.log
+[Sun May 28 18:01:27 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/runme.log
+file copy -force C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.runs/impl_1/DebUART_wrapper.sysdef C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk -hwspec C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.sdk/DebUART_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/DebUART.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 28 18:10:40 2017...

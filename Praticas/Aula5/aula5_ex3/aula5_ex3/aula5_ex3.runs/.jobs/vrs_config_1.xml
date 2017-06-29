@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ex3_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_Hamming_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_Hamming_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_BinToBCD16_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_BinToBCD16_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_addr_select_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_addr_select_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_EightDispControl_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_EightDispControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_clock_divider_1hz_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_clock_divider_1hz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_xlconstant_0_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_xlconstant_1_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_xlconstant_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ex3_xlconstant_2_0_synth_1" LaunchDir="C:/Users/fmcta/Desktop/aula5_ex3/aula5_ex3.runs/ex3_xlconstant_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

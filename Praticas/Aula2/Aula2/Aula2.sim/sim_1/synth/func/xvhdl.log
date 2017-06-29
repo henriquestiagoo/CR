@@ -1,0 +1,18 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.sim/sim_1/synth/func/sim_ex2_3_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_divider
+INFO: [VRFC 10-307] analyzing entity ex2_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim_ex2_3
+ERROR: [VRFC 10-1412] syntax error near in [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:12]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:23]
+ERROR: [VRFC 10-283] actual of formal out port led cannot be an expression [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:23]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:27]
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:28]
+ERROR: [VRFC 10-91] clock_enable is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:33]
+ERROR: [VRFC 10-91] left_right is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:34]
+ERROR: [VRFC 10-91] reset is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:35]
+ERROR: [VRFC 10-91] reset is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:36]
+ERROR: [VRFC 10-1412] syntax error near ' [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:37]
+ERROR: [VRFC 10-91] sw_in is not declared [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:37]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd:11]
+INFO: [VRFC 10-240] VHDL file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula2/Aula2/Aula2.srcs/sim_1/new/sim_ex2_3.vhd ignored due to errors

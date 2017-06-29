@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "sim_ex2_3_func_synth.vhd"
+vhdl xil_defaultlib  "../../../../Aula2.srcs/sim_1/new/sim_ex2_3.vhd"
+
+# Do not sort compile order
+nosort

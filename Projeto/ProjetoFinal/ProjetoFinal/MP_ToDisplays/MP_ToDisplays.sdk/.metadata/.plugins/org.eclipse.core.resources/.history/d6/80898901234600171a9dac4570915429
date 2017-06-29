@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+#define NUM_WORDS 64
+#define ASCII_WORD_SIZE 2
+#define MIN_WORD 10
+#define MAX_WORD 50
+#define REPEAT 4
+#define BITS 8
+
+//declare an XGpio and XGpio instance
+XGpio GPIO_0;
+XGpio_Config GPIO_0_conf;
+
+void xil_sprintf(char *output_buf, const charptr ctrl1, ...);
+static unsigned int words[NUM_WORDS] = {0xb5,0xf,0x75,0xbc,0x6a,0x60,0x79,0x1f,0xf9,0x2e,0xfc,0x94,0x66,0x71,0xa1,0xb6,0xce,0x31,0x5f,0x6a,0x7f,0x19,0x92,0x3d,0x76,0x9f,0xfa,0xde,0x36,0xc3,0xaa,0x0,0xa4,0xe3,0xc8,0x29,0xc3,0x5a,0xd3,0xb2,0xfb,0xf5,0x1d,0xa6,0x31,0x4a,0x23,0xb8,0x9f,0xb,0xa1,0xa3,0x34,0xa,0x92,0xcb,0xa4,0x1a,0x73,0x58,0x90,0x3d,0x71,0x4f};
+
+int main(){
+	GPIO_0_conf.BaseAddress 	= XPAR_AXI_GPIO_0_BASEADDR;
+	GPIO_0_conf.DeviceId 		= XPAR_GPIO_0_DEVICE_ID;
+	GPIO_0_conf.IsDual 		= XPAR_GPIO_0_IS_DUAL;
+
+	//Initialize the XGpio instance
+	XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+	init_platform();
+
+	/*xil_printf("Writing words...\n");
+
+	unsigned int max_word = 0;
+	unsigned int min_word = 255;
+	unsigned int count_words = 0;
+	for (int k = 0; k < NUM_WORDS; k++)  {
+		xil_printf("writing to the mem: %d\n",words[k]);
+		// Write to the memory
+		XGpio_DiscreteWrite(&GPIO_0, 1, (1 << 21) | words[k]);
+		if(words[k] >= MIN_WORD && words[k] <= MAX_WORD){
+			count_words++;
+			if(words[k] > max_word)
+				max_word = words[k];
+			else if(words[k] < min_word){
+				min_word = words[k];
+			}
+		}
+	}
+
+	// Not to write to the memory;
+	XGpio_DiscreteWrite(&GPIO_0, 1, 0);
+
+	//xil_printf("Count words: %d \n", count_words);
+	xil_printf("Min word: %d \n", min_word);
+	xil_printf("Max word: %d \n", max_word);
+	xil_printf("Writing done!\n");
+	xil_printf("Receiving words...\n");
+
+	unsigned int prev = 0;
+	int count = 0;
+	int read_words[count_words];
+
+	char ascii_words[count_words][ASCII_WORD_SIZE];
+
+	unsigned int input;
+	int start = 0;
+	do {
+		input = XGpio_DiscreteRead(&GPIO_0, 2);
+		//xil_printf("k = %d\n",input);
+		if(input == min_word){
+			start = 1;
+		}
+		if (prev != input && start == 1){
+		  prev = input;
+		  read_words[count] = prev;
+		  xil_sprintf(ascii_words[count], "%d", prev);
+		  xil_printf("word[%d] = %d\n", count, read_words[count]);
+		  count++;
+		}
+	} while(input != max_word || count == 0);
+
+	MB_Sleep(1000);*/
+	//count = 0;
+	unsigned int vga_idx;
+
+	char *nomes = "Tiago Henriques 73046 e Miguel Oliveira 72638";
+	char *s = "Universidade de Aveiro";
+	char *words = "words between 10 and 50: ";
+	for(int i = 0; i < 22; i++){
+		vga_idx = (0x200 + i);
+		XGpio_DiscreteWrite(&GPIO_0, 1, s[i] | (vga_idx << BITS));
+	}
+	for(int i = 0; i < strlen(nomes); i++){
+			vga_idx = (0x264 + i);
+			XGpio_DiscreteWrite(&GPIO_0, 1, nomes[i] | (vga_idx << BITS));
+		}
+	for(int i = 0; i < strlen(words); i++){
+				vga_idx = (0x2f0 + i);
+				XGpio_DiscreteWrite(&GPIO_0, 1, words[i] | (vga_idx << BITS));
+			}
+
+	/*do {
+		for (int ascii_word_idx = 0; ascii_word_idx < count_words-1; ascii_word_idx++) {
+			for (int char_idx = 0; char_idx < ASCII_WORD_SIZE; char_idx++) {
+			  xil_printf("%c ", ascii_words[ascii_word_idx][char_idx]);
+			  //xil_printf("%d, ", read_words[ascii_word_idx]);
+			  vga_idx = (0x2E5 + char_idx);
+			  XGpio_DiscreteWrite(&GPIO_0, 1, (ascii_words[ascii_word_idx][char_idx]) | (vga_idx << BITS));
+			}
+			MB_Sleep(1000);
+		}
+		count++;
+	} while(count < REPEAT);*/
+
+	xil_printf("\nThe program terminates!!!\n");
+	cleanup_platform();
+	return 0;
+}

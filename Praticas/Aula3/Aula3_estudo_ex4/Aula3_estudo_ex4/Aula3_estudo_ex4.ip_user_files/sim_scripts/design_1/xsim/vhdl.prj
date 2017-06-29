@@ -1,0 +1,14 @@
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/a7ed/src/Binary_to_BCD16.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_BinToBCD16_0_0/sim/design_1_BinToBCD16_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/f967/src/segment_decoder.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/f967/src/EightDisplayControl.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_EightDisplayControl_0_0/sim/design_1_EightDisplayControl_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/9a1d/src/hamming.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_hamming_0_2/sim/design_1_hamming_0_2.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ipshared/e147/xlconstant.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/ip/design_1_xlconstant_2_0/sim/design_1_xlconstant_2_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_1/hdl/design_1.vhd" 
+
+nosort

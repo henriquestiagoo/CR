@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 14:14:44 2017
+# Process ID: 5820
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3000 C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Praticas\Aula4\42 Ano\42 Ano\Aual5.xpr
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/vivado.log
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula4/42 Ano/42 Ano/Aual5.xpr}

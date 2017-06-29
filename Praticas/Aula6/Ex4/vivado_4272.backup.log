@@ -1,0 +1,240 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 12 13:25:36 2017
+# Process ID: 4272
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent480 C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Praticas\Aula6\Ex4\Ex4.xpr
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/vivado.log
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:33 . Memory (MB): peak = 817.020 ; gain = 137.012
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:user:clock_divider:1.0 - clock_divider_0
+Adding cell -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+Adding cell -- xilinx.com:user:EightDisplayControl:1.0 - EightDisplayControl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Adding cell -- xilinx.com:user:ramControl:1.0 - ramControl_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:user:AverageFSM:1.0 - AverageFSM_0
+Adding cell -- xilinx.com:user:wordToRegisto:1.0 - wordToRegisto_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ramControl_0/clk_d(undef) and /blk_mem_gen_0/clka(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /btnC(rst) and /AverageFSM_0/btnC(undef)
+Successfully read diagram <design_1> from BD file <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 1006.188 ; gain = 184.938
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1079.117 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274505419A
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {3} CONFIG.Coe_File {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/aula6_ex4.coe} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula3/Aula3_estudo_ex4/coe/aula6_ex4.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../../Aula3/Aula3_estudo_ex4/coe/aula6_ex4.coe'
+endgroup
+startgroup
+set_property -dict [list CONFIG.Output_Width {2}] [get_bd_cells c_counter_binary_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+delete_bd_objs [get_bd_ports led]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property location {5 267 -1070} [get_bd_cells xlconstant_1]
+startgroup
+set_property -dict [list CONFIG.CONST_WIDTH {4} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_1]
+endgroup
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins EightDisplayControl_0/near_leftR]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins EightDisplayControl_0/leftR]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins EightDisplayControl_0/rightL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins EightDisplayControl_0/near_rightL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins EightDisplayControl_0/near_leftL]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins EightDisplayControl_0/leftL]
+save_bd_design
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+CRITICAL WARNING: [BD 41-1761] Reset pin '/clock_divider_0/reset' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/clock_divider_0/clk
+/clock_divider_0/divided_clk
+
+WARNING: [BD 41-927] Following properties on pin /clock_divider_0/divided_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_clock_divider_0_0_divided_clk 
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd> 
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_counter_binary_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ramControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AverageFSM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wordToRegisto_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_xlconstant_1_1] }
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_xlconstant_1_1_synth_1
+[Wed Apr 12 13:48:26 2017] Launched design_1_xlconstant_1_1_synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_xlconstant_1_1_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 12 13:50:54 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/synth_1/runme.log
+[Wed Apr 12 13:50:54 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/impl_1/runme.log
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+make_wrapper -files [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1.vhd
+VHDL Output written to : C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clock_divider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_counter_binary_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDisplayControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ramControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AverageFSM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wordToRegisto_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+Exporting to file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+generate_target: Time (s): cpu = 00:01:01 ; elapsed = 00:01:16 . Memory (MB): peak = 1407.438 ; gain = 61.910
+catch { config_ip_cache -export [get_ips -all design_1_clock_divider_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_c_counter_binary_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_EightDisplayControl_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_blk_mem_gen_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_ramControl_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xlconstant_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xlslice_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xlslice_1_0] }
+catch { config_ip_cache -export [get_ips -all design_1_AverageFSM_0_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_AverageFSM_0_1, cache-ID = c104d9ed8cd2d870; cache size = 1.435 MB.
+catch { config_ip_cache -export [get_ips -all design_1_wordToRegisto_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_wordToRegisto_0_0, cache-ID = 558a99512a9c8b73; cache size = 1.435 MB.
+catch { config_ip_cache -export [get_ips -all design_1_xlconstant_1_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xlconstant_1_1, cache-ID = 091b8131306bc460; cache size = 1.435 MB.
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 {design_1_clock_divider_0_0_synth_1 design_1_c_counter_binary_0_0_synth_1 design_1_EightDisplayControl_0_0_synth_1 design_1_blk_mem_gen_0_0_synth_1 design_1_ramControl_0_0_synth_1 design_1_xlconstant_0_0_synth_1 design_1_xlslice_0_0_synth_1 design_1_xlslice_1_0_synth_1}
+[Wed Apr 12 13:54:32 2017] Launched design_1_clock_divider_0_0_synth_1, design_1_c_counter_binary_0_0_synth_1, design_1_EightDisplayControl_0_0_synth_1, design_1_blk_mem_gen_0_0_synth_1, design_1_ramControl_0_0_synth_1, design_1_xlconstant_0_0_synth_1, design_1_xlslice_0_0_synth_1, design_1_xlslice_1_0_synth_1...
+Run output will be captured here:
+design_1_clock_divider_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_clock_divider_0_0_synth_1/runme.log
+design_1_c_counter_binary_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_c_counter_binary_0_0_synth_1/runme.log
+design_1_EightDisplayControl_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_EightDisplayControl_0_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+design_1_ramControl_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_ramControl_0_0_synth_1/runme.log
+design_1_xlconstant_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_xlconstant_0_0_synth_1/runme.log
+design_1_xlslice_0_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_xlslice_0_0_synth_1/runme.log
+design_1_xlslice_1_0_synth_1: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/design_1_xlslice_1_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs design_1_clock_divider_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_clock_divider_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_c_counter_binary_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_c_counter_binary_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_EightDisplayControl_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_EightDisplayControl_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_blk_mem_gen_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_blk_mem_gen_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_ramControl_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_ramControl_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_xlconstant_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_xlconstant_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_xlslice_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_xlslice_0_0_impl_1]
+set_property needs_refresh false [get_runs design_1_xlslice_1_0_synth_1]
+set_property needs_refresh false [get_runs design_1_xlslice_1_0_impl_1]
+generate_target all [get_files  C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files -ipstatic_source_dir C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/modelsim} {questa=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/questa} {riviera=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Apr 12 13:56:17 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/synth_1/runme.log
+[Wed Apr 12 13:56:17 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.runs/impl_1/runme.log
+open_bd_design {C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex4/Ex4.srcs/sources_1/bd/design_1/design_1.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 12 13:59:25 2017...

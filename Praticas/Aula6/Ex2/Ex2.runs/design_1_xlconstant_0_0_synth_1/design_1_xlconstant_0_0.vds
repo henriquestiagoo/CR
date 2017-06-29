@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 16:21:10 2017
+# Process ID: 11344
+# Current directory: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.runs/design_1_xlconstant_0_0_synth_1
+# Command line: vivado.exe -log design_1_xlconstant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xlconstant_0_0.tcl
+# Log file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.runs/design_1_xlconstant_0_0_synth_1/design_1_xlconstant_0_0.vds
+# Journal file: C:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.runs/design_1_xlconstant_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_xlconstant_0_0.tcl -notrace
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 288.543 ; gain = 78.238
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_0' [c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (1#1) [c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xlconstant_0_0' (2#1) [c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Praticas/Aula6/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.vhd:35]
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 325.863 ; gain = 115.559
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 325.863 ; gain = 115.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 325.863 ; gain = 115.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 325.863 ; gain = 115.559
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 446.035 ; gain = 235.730
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 446.035 ; gain = 235.730
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 448.039 ; gain = 237.734
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 534.145 ; gain = 320.727
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 906.738 ; gain = 372.594

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 16 20:03:24 2017
+# Process ID: 3632
+# Current directory: C:/Users/fmcta/Desktop/34-Hamming
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8168 C:\Users\fmcta\Desktop\34-Hamming\34-Hamming.xpr
+# Log file: C:/Users/fmcta/Desktop/34-Hamming/vivado.log
+# Journal file: C:/Users/fmcta/Desktop/34-Hamming\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fmcta/Desktop/34-Hamming/34-Hamming.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/fmcta/Desktop/34-Hamming/34-Hamming.ip_user_files', nor could it be found using path 'D:/Users/jgnro/Desktop/UA/4A2S/4A2S/CR/Praticas/03/34-Hamming/34-Hamming.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fmcta/Desktop/34-Hamming/34-Hamming.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 768.891 ; gain = 115.980
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 16 20:05:28 2017...

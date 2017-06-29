@@ -1,0 +1,27 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port btnC -pg 1 -y 20 -defaultsOSRD
+preplace port clk -pg 1 -y -190 -defaultsOSRD
+preplace portBus sw -pg 1 -y 40 -defaultsOSRD
+preplace portBus an -pg 1 -y -200 -defaultsOSRD
+preplace portBus seg -pg 1 -y -180 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y -230 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 3 -y -110 -defaultsOSRD
+preplace inst Decimal_to_Displays_0 -pg 1 -lvl 5 -y -190 -defaultsOSRD
+preplace inst BinToBCD16_0 -pg 1 -lvl 4 -y 50 -defaultsOSRD
+preplace inst contador_0 -pg 1 -lvl 2 -y 0 -defaultsOSRD
+preplace netloc BinToBCD16_0_BCD0 1 4 1 820
+preplace netloc BinToBCD16_0_BCD1 1 4 1 830
+preplace netloc Decimal_to_Displays_0_an 1 5 1 N
+preplace netloc btnC_1 1 0 4 NJ 20 -60J -100 200 -40 610
+preplace netloc Decimal_to_Displays_0_seg 1 5 1 N
+preplace netloc xlconstant_0_dout 1 1 3 NJ -230 NJ -230 600
+preplace netloc clk_1 1 0 3 -390J -120 NJ -120 N
+preplace netloc contador_0_maxCount1s 1 2 2 NJ 0 590
+preplace netloc clock_divider_0_divided_clk 1 1 4 -50 -210 NJ -210 620 -210 N
+preplace netloc sw_1 1 0 2 NJ 40 -50
+levelinfo -pg 1 -410 -120 90 510 720 920 1030 -top -480 -bot 200
+",
+}
+0

@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 05 14:12:39 2017
+# Process ID: 10172
+# Current directory: C:/Users/fmcta/Desktop/CR/aula6/ex4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7488 C:\Users\fmcta\Desktop\CR\aula6\ex4\ex4.xpr
+# Log file: C:/Users/fmcta/Desktop/CR/aula6/ex4/vivado.log
+# Journal file: C:/Users/fmcta/Desktop/CR/aula6/ex4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.xpr
+close [ open C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/new/wordtoRegisto.vhd w ]
+add_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/new/wordtoRegisto.vhd
+ipx::package_project -root_dir c:/users/fmcta/desktop/CR/ips/wordToRegisto -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/average c:/Users/fmcta/Desktop/EightDispCont c:/Users/fmcta/clock_divider_1hz} [current_project]
+update_ip_catalog
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top wordToRegisto [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+ipx::package_project -root_dir c:/users/fmcta/desktop/CR/ips/wordToRegisto -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+remove_files  {c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_Average_0_1/ex4_Average_0_1.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_EightDisplayControl_0_0/ex4_EightDisplayControl_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_0/ex4_xlslice_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_1/ex4_xlslice_0_1.xci}
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir c:/users/fmcta/desktop/cr/ips/wordtoregisto -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/fmcta/desktop/CR/ips/wordToRegisto
+current_project ex4
+update_ip_catalog -rebuild
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+startgroup
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {3} CONFIG.Coe_File {C:/Users/fmcta/Desktop/gen/word_aula6_ex4.coe} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_bd_cells blk_mem_gen_0]
+endgroup
+delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_cells xlconstant_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0
+endgroup
+set_property -dict [list CONFIG.Output_Width {2}] [get_bd_cells c_counter_binary_0]
+set_property location {2.5 557 -60} [get_bd_cells c_counter_binary_0]
+connect_bd_net [get_bd_pins c_counter_binary_0/Q] [get_bd_pins blk_mem_gen_0/addra]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clock_divider_1hz:1.0 clock_divider_1hz_0
+endgroup
+set_property location {2 409 -184} [get_bd_cells clock_divider_1hz_0]
+disconnect_bd_net /clk_1 [get_bd_pins blk_mem_gen_0/clka]
+connect_bd_net [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clock_divider_1hz_0/divided_clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clock_divider_1hz_0/clk]
+connect_bd_net [get_bd_pins c_counter_binary_0/CLK] [get_bd_pins clock_divider_1hz_0/divided_clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins clock_divider_1hz_0/reset] [get_bd_pins xlconstant_0/dout]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:wordToRegisto:1.0 wordToRegisto_0
+endgroup
+set_property location {5.5 951 -102} [get_bd_cells wordToRegisto_0]
+set_property -dict [list CONFIG.n_words {2}] [get_bd_cells wordToRegisto_0]
+delete_bd_objs [get_bd_nets blk_mem_gen_0_douta]
+set_property location {5 932 -111} [get_bd_cells wordToRegisto_0]
+startgroup
+connect_bd_net [get_bd_pins wordToRegisto_0/words_conc] [get_bd_pins Average_0/inp]
+endgroup
+connect_bd_net [get_bd_pins wordToRegisto_0/clk] [get_bd_pins clock_divider_1hz_0/divided_clk]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins wordToRegisto_0/word]
+save_bd_design
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_blk_mem_gen_0_0] }
+catch { config_ip_cache -export [get_ips -all ex4_c_counter_binary_0_0] }
+catch { config_ip_cache -export [get_ips -all ex4_clock_divider_1hz_0_0] }
+catch { config_ip_cache -export [get_ips -all ex4_xlconstant_0_1] }
+catch { config_ip_cache -export [get_ips -all ex4_wordToRegisto_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 {ex4_blk_mem_gen_0_0_synth_1 ex4_c_counter_binary_0_0_synth_1 ex4_wordToRegisto_0_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project tmp_edit_project
+close_project
+ipx::package_project -root_dir c:/users/fmcta/desktop/CR/ips/wordToRegisto -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+remove_files  {c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_Average_0_1/ex4_Average_0_1.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_EightDisplayControl_0_0/ex4_EightDisplayControl_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_c_counter_binary_0_0/ex4_c_counter_binary_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_wordToRegisto_0_0/ex4_wordToRegisto_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_0/ex4_xlslice_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_1/ex4_xlslice_0_1.xci}
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir c:/users/fmcta/desktop/cr/ips/wordtoregisto -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/fmcta/desktop/CR/ips/wordToRegisto
+current_project ex4
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:wordToRegisto:1.0 [get_ips  ex4_wordToRegisto_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ex4_wordToRegisto_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_wordToRegisto_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 ex4_wordToRegisto_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ex4_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_project tmp_edit_project
+close_project
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top wordToRegisto [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+report_ip_status -name ip_status 
+ipx::package_project -root_dir c:/users/fmcta/desktop/CR/ips/wordToRegisto -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+remove_files  {c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_Average_0_1/ex4_Average_0_1.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_EightDisplayControl_0_0/ex4_EightDisplayControl_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_c_counter_binary_0_0/ex4_c_counter_binary_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_wordToRegisto_0_0/ex4_wordToRegisto_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_0/ex4_xlslice_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_1/ex4_xlslice_0_1.xci}
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir c:/users/fmcta/desktop/cr/ips/wordtoregisto -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/fmcta/desktop/CR/ips/wordToRegisto
+current_project ex4
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:wordToRegisto:1.0 [get_ips  ex4_wordToRegisto_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ex4_wordToRegisto_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_wordToRegisto_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 ex4_wordToRegisto_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ex4_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_project tmp_edit_project
+close_project
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top wordToRegisto [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+ipx::package_project -root_dir c:/users/fmcta/desktop/CR/ips/wordToRegisto -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+remove_files  {c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_Average_0_1/ex4_Average_0_1.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_EightDisplayControl_0_0/ex4_EightDisplayControl_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_c_counter_binary_0_0/ex4_c_counter_binary_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_wordToRegisto_0_0/ex4_wordToRegisto_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_0/ex4_xlslice_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_1/ex4_xlslice_0_1.xci}
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir c:/users/fmcta/desktop/cr/ips/wordtoregisto -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/fmcta/desktop/CR/ips/wordToRegisto
+current_project ex4
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:wordToRegisto:1.0 [get_ips  ex4_wordToRegisto_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ex4_wordToRegisto_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_wordToRegisto_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 ex4_wordToRegisto_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ex4_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top wordToRegisto [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+current_project tmp_edit_project
+close_project
+ipx::package_project -root_dir c:/users/fmcta/desktop/CR/ips/wordToRegisto -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/CR/ips/wordToRegisto/component.xml
+remove_files  {c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_Average_0_1/ex4_Average_0_1.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_EightDisplayControl_0_0/ex4_EightDisplayControl_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_blk_mem_gen_0_0/ex4_blk_mem_gen_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_c_counter_binary_0_0/ex4_c_counter_binary_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_wordToRegisto_0_0/ex4_wordToRegisto_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlconstant_1_0/ex4_xlconstant_1_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_0/ex4_xlslice_0_0.xci c:/users/fmcta/desktop/CR/ips/wordToRegisto/src/ex4_xlslice_0_1/ex4_xlslice_0_1.xci}
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir c:/users/fmcta/desktop/cr/ips/wordtoregisto -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/fmcta/desktop/CR/ips/wordToRegisto
+current_project ex4
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:wordToRegisto:1.0 [get_ips  ex4_wordToRegisto_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ex4_wordToRegisto_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_wordToRegisto_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 ex4_wordToRegisto_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ex4_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+create_bd_port -dir I -from 7 -to 0 led
+delete_bd_objs [get_bd_ports led]
+startgroup
+create_bd_port -dir O -from 7 -to 0 led
+connect_bd_net [get_bd_pins /blk_mem_gen_0/douta] [get_bd_ports led]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_project tmp_edit_project
+current_project ex4
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+set_property  ip_repo_paths  {c:/users/fmcta/desktop/CR/ips/wordToRegisto c:/users/fmcta/desktop/average c:/Users/fmcta/Desktop/EightDispCont c:/Users/fmcta/clock_divider_1hz C:/Users/fmcta/ram_control} [current_project]
+update_ip_catalog
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:RAM_control:1.0 RAM_control_0
+endgroup
+set_property location {4 497 -148} [get_bd_cells RAM_control_0]
+connect_bd_net [get_bd_pins RAM_control_0/clk] [get_bd_pins clock_divider_1hz_0/divided_clk]
+disconnect_bd_net /clock_divider_1hz_0_divided_clk [get_bd_pins blk_mem_gen_0/clka]
+connect_bd_net [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins RAM_control_0/clk_d]
+set_property location {3 526 -153} [get_bd_cells RAM_control_0]
+connect_bd_net [get_bd_pins RAM_control_0/rst] [get_bd_pins xlconstant_0/dout]
+set_property location {2 358 -58} [get_bd_cells c_counter_binary_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.B_Type.VALUE_SRC USER CONFIG.B_Width.VALUE_SRC USER CONFIG.A_Type.VALUE_SRC USER CONFIG.A_Width.VALUE_SRC USER] [get_bd_cells c_addsub_0]
+set_property -dict [list CONFIG.A_Type {Unsigned} CONFIG.B_Type {Unsigned} CONFIG.A_Width {2} CONFIG.B_Width {2} CONFIG.Add_Mode {Subtract} CONFIG.Latency {0} CONFIG.B_Constant {true} CONFIG.B_Value {01} CONFIG.CE {false} CONFIG.Out_Width {2}] [get_bd_cells c_addsub_0]
+endgroup
+set_property location {4 534 -40} [get_bd_cells c_addsub_0]
+delete_bd_objs [get_bd_nets c_counter_binary_0_Q]
+connect_bd_net [get_bd_pins c_addsub_0/S] [get_bd_pins blk_mem_gen_0/addra]
+connect_bd_net [get_bd_pins c_addsub_0/A] [get_bd_pins c_counter_binary_0/Q]
+save_bd_design
+report_ip_status -name ip_status 
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_RAM_control_0_0] }
+catch { config_ip_cache -export [get_ips -all ex4_c_addsub_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 {ex4_RAM_control_0_0_synth_1 ex4_c_addsub_0_0_synth_1}
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+report_ip_status -name ip_status 
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+startgroup
+set_property -dict [list CONFIG.delay {0}] [get_bd_cells RAM_control_0]
+endgroup
+save_bd_design
+generate_target all [get_files  C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+catch { config_ip_cache -export [get_ips -all ex4_RAM_control_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd]
+launch_runs -jobs 2 ex4_RAM_control_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd] -directory C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files -ipstatic_source_dir C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/modelsim} {questa=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/questa} {riviera=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/riviera} {activehdl=C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.runs/impl_1/ex4_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_bd_design {C:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ex4.bd}
+delete_bd_objs [get_bd_nets c_counter_binary_0_Q] [get_bd_nets c_addsub_0_S] [get_bd_cells c_addsub_0]
+connect_bd_net [get_bd_pins c_counter_binary_0/Q] [get_bd_pins blk_mem_gen_0/addra]
+save_bd_design
+close_project

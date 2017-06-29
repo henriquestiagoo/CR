@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 10 11:10:19 2017" VIVADOVERSION="2016.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="clk"/>
+        <CONNECTION INSTANCE="BinToBCD16_0" PORT="clk"/>
+        <CONNECTION INSTANCE="EightDisplayControl_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="selectAddress_0_address">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="selectAddress_0" PORT="address"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="EightDisplayControl_0_select_display">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="EightDisplayControl_0" PORT="select_display"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="6" NAME="seg" RIGHT="0" SIGIS="undef" SIGNAME="EightDisplayControl_0_segments">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="EightDisplayControl_0" PORT="segments"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/BinToBCD16_0" HWVERSION="1.0" INSTANCE="BinToBCD16_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BinToBCD16" VLNV="xilinx.com:user:BinToBCD16:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="size_of_data_to_convert" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_BinToBCD16_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="binary" RIGHT="0" SIGIS="undef" SIGNAME="dist_mem_gen_0_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="request" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD4" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="rightL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD3" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="leftR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD2" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="near_leftR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD1" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="near_rightR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD0" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="rightR"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/EightDisplayControl_0" HWVERSION="1.0" INSTANCE="EightDisplayControl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="EightDisplayControl" VLNV="xilinx.com:user:EightDisplayControl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_EightDisplayControl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="leftL" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="near_leftL" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="near_rightL" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="rightL" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="BCD4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="leftR" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="BCD3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="near_leftR" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="BCD2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="near_rightR" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="BCD1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="rightR" RIGHT="0" SIGIS="undef" SIGNAME="BinToBCD16_0_BCD0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="BCD0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="select_display" RIGHT="0" SIGIS="undef" SIGNAME="EightDisplayControl_0_select_display">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="an"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="segments" RIGHT="0" SIGIS="undef" SIGNAME="EightDisplayControl_0_segments">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seg"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clock_divider_0" HWVERSION="1.0" INSTANCE="clock_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:user:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="how_fast" VALUE="26"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="divided_clk" SIGIS="clk" SIGNAME="clock_divider_0_divided_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="selectAddress_0" PORT="clk"/>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/dist_mem_gen_0" HWVERSION="8.0" INSTANCE="dist_mem_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dist_mem_gen" VLNV="xilinx.com:ip:dist_mem_gen:8.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=dist_mem_gen;v=v8_0;d=pg063-dist-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_ADDR_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEPTH" VALUE="16"/>
+        <PARAMETER NAME="C_HAS_CLK" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_D" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_DPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPRA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_I_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SPO" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_WE" VALUE="1"/>
+        <PARAMETER NAME="C_MEM_INIT_FILE" VALUE="design_1_dist_mem_gen_0_0.mif"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_QCE_JOINED" VALUE="0"/>
+        <PARAMETER NAME="C_QUALIFY_WE" VALUE="0"/>
+        <PARAMETER NAME="C_READ_MIF" VALUE="1"/>
+        <PARAMETER NAME="C_REG_A_D_INPUTS" VALUE="0"/>
+        <PARAMETER NAME="C_REG_DPRA_INPUT" VALUE="0"/>
+        <PARAMETER NAME="C_SYNC_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="C_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_PARSER_TYPE" VALUE="1"/>
+        <PARAMETER NAME="depth" VALUE="16"/>
+        <PARAMETER NAME="data_width" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_dist_mem_gen_0_0"/>
+        <PARAMETER NAME="memory_type" VALUE="single_port_ram"/>
+        <PARAMETER NAME="input_options" VALUE="non_registered"/>
+        <PARAMETER NAME="input_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="qualify_we_with_i_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="simple_dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="output_options" VALUE="non_registered"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="common_output_clk" VALUE="false"/>
+        <PARAMETER NAME="single_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="common_output_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="simple_dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="coefficient_file" VALUE="../../../../../../../../Aula3/Aula3_estudo_ex4/coe/aula6_ex1.coe"/>
+        <PARAMETER NAME="default_data_radix" VALUE="16"/>
+        <PARAMETER NAME="default_data" VALUE="0"/>
+        <PARAMETER NAME="reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="ce_overrides" VALUE="ce_overrides_sync_controls"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="selectAddress_0_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="selectAddress_0" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="d" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_3" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="clock_divider_0_divided_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="divided_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="we" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="spo" RIGHT="0" SIGIS="undef" SIGNAME="dist_mem_gen_0_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="binary"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/selectAddress_0" HWVERSION="1.0" INSTANCE="selectAddress_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="selectAddress" VLNV="xilinx.com:user:selectAddress:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="words" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_selectAddress_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_divided_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="divided_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="selectAddress_0_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="reset"/>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="reset"/>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="we"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BinToBCD16_0" PORT="request"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0000"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="near_rightL"/>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="near_leftL"/>
+            <CONNECTION INSTANCE="EightDisplayControl_0" PORT="leftL"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_3" HWVERSION="1.1" INSTANCE="xlconstant_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0000000000000001"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

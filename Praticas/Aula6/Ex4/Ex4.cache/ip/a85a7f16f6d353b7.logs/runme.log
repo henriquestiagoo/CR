@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log ex4_xlconstant_2_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex4_xlconstant_2_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source ex4_xlconstant_2_0.tcl -notrace
+Starting Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 290.945 ; gain = 81.332
+INFO: [Synth 8-638] synthesizing module 'ex4_xlconstant_2_0' [c:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_2_0/sim/ex4_xlconstant_2_0.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [c:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (1#1) [c:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'ex4_xlconstant_2_0' (2#1) [c:/Users/fmcta/Desktop/CR/aula6/ex4/ex4.srcs/sources_1/bd/ex4/ip/ex4_xlconstant_2_0/sim/ex4_xlconstant_2_0.vhd:35]
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 327.523 ; gain = 117.910
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 327.523 ; gain = 117.910
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 327.523 ; gain = 117.910
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 327.523 ; gain = 117.910
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 448.750 ; gain = 239.137
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 448.750 ; gain = 239.137
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 450.758 ; gain = 241.145
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 450.758 ; gain = 241.145
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 536.898 ; gain = 321.078
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 908.555 ; gain = 371.656

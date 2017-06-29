@@ -1,0 +1,73 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sun Apr 02 15:12:41 2017
+| Host         : TiagoHenriques running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              14 |            4 |
+| Yes          | No                    | No                     |              37 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              20 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+---------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|                Clock Signal                |                      Enable Signal                      |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------------------------+---------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  design_1_i/clock_divider_0/U0/divided_clk | design_1_i/BinToBCD16_0/U0/index_c[4]_i_1_n_0           |                                                       |                2 |              5 |
+|  design_1_i/clock_divider_0/U0/divided_clk | design_1_i/GreatestMaximumDivisor_0/U0/Res              | design_1_i/GreatestMaximumDivisor_0/U0/Res[7]_i_1_n_0 |                3 |              8 |
+|  design_1_i/clock_divider_0/U0/divided_clk | design_1_i/BinToBCD16_0/U0/get_outputs                  | btnL_IBUF                                             |                3 |             12 |
+|  design_1_i/clock_divider_0/U0/divided_clk |                                                         |                                                       |                4 |             13 |
+|  design_1_i/clock_divider_0/U0/divided_clk |                                                         | btnL_IBUF                                             |                4 |             14 |
+|  design_1_i/clock_divider_0/U0/divided_clk | design_1_i/BinToBCD16_0/U0/int_rg_c[15]_i_1_n_0         |                                                       |                3 |             16 |
+|  design_1_i/clock_divider_0/U0/divided_clk | design_1_i/GreatestMaximumDivisor_0/U0/FSM_A[7]_i_1_n_0 |                                                       |                8 |             16 |
+|  clk_IBUF                                  |                                                         |                                                       |                4 |             16 |
++--------------------------------------------+---------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 5      |                     1 |
+| 8      |                     1 |
+| 12     |                     1 |
+| 13     |                     1 |
+| 14     |                     1 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

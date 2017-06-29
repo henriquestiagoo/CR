@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+// Vivado v2016.4 (64-bit)
+// Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+// Created on Sunday May 28, 2017 - 06:19:07 pm, from:
+//
+//     Map file     - C:\Users\Utilizador\Desktop\Universidade\4_ano\2_semestre\CR\Projeto\ProjetoFinal\MP_ToDisplays\MP_ToDisplays.srcs\sources_1\bd\DebUART\DebUART.bmm
+//     Data file(s) - c:/Users/Utilizador/Desktop/Universidade/4_ano/2_semestre/CR/Projeto/ProjetoFinal/MP_ToDisplays/MP_ToDisplays.srcs/sources_1/bd/DebUART/ip/DebUART_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'DebUART_i_microblaze_0.DebUART_i_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000
